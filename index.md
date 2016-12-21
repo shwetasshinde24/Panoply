@@ -12,26 +12,19 @@ Panoply is implemented on top of the Intel SDK 1.5 Open Source Beta shipped for 
 
 The Linux SGX developer environment comprises of hardware with SGX support, bios support for SGX, the SGX driver, the SGX SDK, and the SGX Platform Software. Out of these, the hardware support epends on your processor and the BIOS support is provided by the vendor. The SGX driver, SDK and PSW are provided by Intel.
 
-### Hardware Requirements
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
-
-
-### Enable SGX in BIOS
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
-
-
-#### Quick test for checking hardware support and BIOS Settings
+### Hardware Support and BIOS Settings
 
 * Check if your machine is listed in the following list of hardware which supports Intel SGX 
 [https://github.com/ayeks/SGX-hardware](https://github.com/ayeks/SGX-hardware)
 
+* Ensure that you have enables SGX support in your BIOS. 
+
 * Run the test-sgx.c code from [https://github.com/ayeks/SGX-hardware](https://github.com/ayeks/SGX-hardware) to quickly  check if  SGX is available for your CPU and enabled in BIOS.
+ 
 
 ### Software Requirements
 
-Following is the software configuration that required for Intel SGX SDK and Panoply.
+Following is the software configuration required for Intel SGX SDK and Panoply.
 
 * [Ubuntu* Desktop-14.04-LTS 64bits](http://old-releases.ubuntu.com/releases/trusty/ubuntu-14.04.1-desktop-amd64.iso)
 
@@ -74,67 +67,75 @@ Before you start with Panoply, you should ensure that you are able to execute SG
 
 ## Panoply Demo
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
-
-
-### Platform Setup
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
+We are releasing the OpenSSL library and the corresponding benchmarks and unit tests at the moment. You can setup the OpenSSL demo on your own machine using the following steps.
 
 ### Getting the Demo Code
 
-Thank you for your interest in Panoply. Please drop me an [email](https://www.comp.nus.edu.sg/~shweta24/) for getting access to the demo code. 
+Thank you for your interest in Panoply. You should have received a Dropbox URL for the demo code via Panoply-announcements Group. 
+If you don't have access to the code, please drop me an [email](https://www.comp.nus.edu.sg/~shweta24/) for getting access to the demo code. 
 
-### Executing the Example
+### Executing the OpenSSL Demo Example
 
-#### build libssl ad libcrypto libraries
+#### Extract the zip file
+
+#### Build libssl and libcrypto libraries
 
 <code>
 cd openssl/ssl_bench/topenssl/
 make all -j8
 </code>
 
-#### move the libraries to src folder
+This produces _libssl.a_ and _libcrypto.a_ files in the topenssl folder.
+
+#### Move the libraries to src folder
 
 <code>
 cp libcrypto.a libssl.a ../src/
 </code>
 
-#### build the enclave and the app
+#### Build the Enclave and the App
 
 <code>
 cd ../src/
 make all
 </code>
 
-#### run the app
+This produces a _TopensslEnclave.signed.so_ file for enclave and an _app_ file for the executable.
+
+#### Run the app
 
 <code>
 ./app sha1
 </code>
 
-#### making changes to the app
+The above command is just an example. You can try other tests for the OpenSSL benchmark. For running the complete benchmark, just run the app file without any arguments.  
+
+#### Making changes to the App
+
+The App.cpp file has the following code:
 
 * Current code
 
-<code>
-// ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv);
-ret = TopensslEnclave_ecall_test_speed_crypto(global_eid, &ecall_return, argc, argv);
-</code>
+  <code>
+  /* ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv); */
+  ret = TopensslEnclave_ecall_test_speed_crypto(global_eid, &ecall_return, argc, argv);
+  </code>
+
+You can modify the above code to execute the SSL test. Do the following changes to the code.
 
 * Modified code
 
-<code>
-ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv);
-//ret = TopensslEnclave_ecall_test_speed_crypto(global_eid, &ecall_return, argc, argv);
-</code>
+  <code>
+  ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv);
+  /* ret = TopensslEnclave_ecall_test_speed_crypto(global_eid, &ecall_return, argc, argv); */
+  </code>
 
 * Build and re-run the app
 
-<code>
-make all
- ./app -dhe1024dsa -bytes 102400 -num 10 -tls1 -server_auth -time
-</code>
+  <code>
+  make all
+   ./app -dhe1024dsa -bytes 102400 -num 10 -tls1 -server_auth -time
+  </code>
 
 
 ### Writing your own Application
