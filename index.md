@@ -4,7 +4,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praes
 
 -----
 
-## Getting Started
+## Before we begin with Panoply
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
 
@@ -18,15 +18,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praes
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
 
 
-#### Quick test for checking hardware support
+#### Quick test for checking hardware support and BIOS Settings
 
-https://github.com/ayeks/SGX-hardware
+* Check if your machine is listed in the following list of hardware which supports Intel SGX 
+[https://github.com/ayeks/SGX-hardware](https://github.com/ayeks/SGX-hardware)
+
+* Run the test-sgx.c code from [https://github.com/ayeks/SGX-hardware](https://github.com/ayeks/SGX-hardware) to quickly  check if  SGX is available for your CPU and enabled in BIOS.
 
 ### Software Requirements
 
-* Ubuntu* Desktop-14.04-LTS 64bits
+Following is the software configuration that required for Intel SGX SDK and Panoply.
 
-* Linux Kernel v3.13.
+* [Ubuntu* Desktop-14.04-LTS 64bits](http://old-releases.ubuntu.com/releases/trusty/ubuntu-14.04.1-desktop-amd64.iso)
+
+* [Linux Kernel v3.13.0-32-generic](http://packages.ubuntu.com/trusty/kernel/linux-image-3.13.0-32-generic)
 
 -----
 
@@ -34,12 +39,12 @@ https://github.com/ayeks/SGX-hardware
 ## Intel SGX Setup
 
 ### Build and Install Intel SGX Driver
-https://github.com/01org/linux-sgx-driver
+[https://github.com/01org/linux-sgx-driver](https://github.com/01org/linux-sgx-driver)
 
 
 ###  Build and Install Intel SGX SDK and Intel SGX PSW
 
-https://github.com/01org/linux-sgx
+[https://github.com/01org/linux-sgx](https://github.com/01org/linux-sgx)
 
 ### Resources for Troubleshooting
 
@@ -55,6 +60,11 @@ https://github.com/01org/linux-sgx
 
 * [Developer Reference](https://download.01.org/intel-sgx/linux-1.6/docs/Intel_SGX_SDK_Developer_Reference_Linux_1.6_Open_Source.pdf)
 
+-----
+
+## Running Sample code from SGX SDK
+Before you start with Panoply, you should ensure that you are able to execute SGX applications. To do this, copy the sample code (the folder is located by default in /opt/intel/sgxsdk/SampleCode/SampleEnclave) to your workspace and build it (<code>make all</code> inside SampleEnclave folder). After sucesfully building the Sample, test it by running <code>./app</code>
+
 
 -----
 
@@ -69,7 +79,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praes
 
 ### Getting the Demo Code
 
-Thank you for your interest in Panoply. Please drop me an [email] (https://www.comp.nus.edu.sg/~shweta24/) for getting access to the demo code. 
+Thank you for your interest in Panoply. Please drop me an [email](https://www.comp.nus.edu.sg/~shweta24/) for getting access to the demo code. 
 
 ### Executing the Example
 
@@ -133,7 +143,7 @@ make all
 We have tested the demo in our development environment, and have tried our best to document the procedure to setup a similar environment on your machine. However, several things might go wrong in this process. Following is a list of all the issues we have seen in our experienceL
 
 ### I cannot run the demo. Is something wrong with my SGX SDK or Panoply setup?
-Before starting the Panoply demo setup, ensure that you are able to execute the Sample application shipped with the Intel SDX SDK. If you are not able to execute the SDK Sample code, then something went wrong with your SDX SDK setup. However, if you were able to execute the sample code and only OpenSSL is failing, then perhaps its a Panoply-specific problem. Please drop me an [email] (https://www.comp.nus.edu.sg/~shweta24/) with the details of the bug / error / runtime failure logs.  
+Before starting the Panoply demo setup, ensure that you are able to execute the Sample application shipped with the Intel SDX SDK. If you are not able to execute the SDK Sample code, then something went wrong with your SDX SDK setup. However, if you were able to execute the sample code and only OpenSSL is failing, then perhaps its a Panoply-specific problem. Please drop me an [email](https://www.comp.nus.edu.sg/~shweta24/) with the details of the bug / error / runtime failure logs.  
 
 ### I am getting a compile time error about "sgx-status.h". Is something wrong with my setup?
 
@@ -141,7 +151,7 @@ Don't panic. The SGX SDK version you installed does not have this header file. D
 
 ### I do not have a machine with SGX Hardware support. How can I use Panoply?
 
-Yes, you can setup the SDK in simulation mode for non-SGX machines. Please refer to the [Intel Installation Guide] (https://download.01.org/intel-sgx/linux-1.6/docs/Intel_SGX_SDK_Installation_Guide_Linux_1.6_Open_Source.pdf) to know more about how to setup the simulation enviroment. After the setup, make sure you are able to run the Sample code shipped with the SDK inside the VM. Then, simply follow the steps listed in the Panoply demo setup guide.
+Yes, you can setup the SDK in simulation mode for non-SGX machines. Please refer to the [Intel Installation Guide](https://download.01.org/intel-sgx/linux-1.6/docs/Intel_SGX_SDK_Installation_Guide_Linux_1.6_Open_Source.pdf) to know more about how to setup the simulation enviroment. After the setup, make sure you are able to run the Sample code shipped with the SDK inside the VM. Then, simply follow the steps listed in the Panoply demo setup guide.
 
 ### I don't have a linux machine with the required OS and / or kernel version. Can I still try out Panoply?
 
@@ -175,7 +185,7 @@ Network and Distributed System Security Symposium (NDSS 2017)
 
 ### Support
 
-Having trouble with Panoply? Check out our [FAQ](https://shwetasshinde24.github.io/Panoply/faq.html) or tell us about it [directly]() and we’ll help you sort it out.
+Having trouble with Panoply? Check out our [FAQ](https://shwetasshinde24.github.io/Panoply/faq.html) or tell us about it [directly](https://www.comp.nus.edu.sg/~shweta24/) and we’ll help you sort it out.
 
 ### Announcements
 
