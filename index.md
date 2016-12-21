@@ -118,6 +118,7 @@ The App.cpp file has the following code:
 
   <code>
   /* ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv); */
+  
   ret = TopensslEnclave_ecall_test_speed_crypto(global_eid, &ecall_return, argc, argv);
   </code>
 
@@ -127,6 +128,7 @@ You can modify the above code to execute the SSL test. Do the following changes 
 
   <code>
   ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv);
+  
   /* ret = TopensslEnclave_ecall_test_speed_crypto(global_eid, &ecall_return, argc, argv); */
   </code>
 
