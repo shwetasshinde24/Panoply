@@ -194,26 +194,28 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
-## Panoply Team 
+## Contact 
 
-### [Shweta Shinde](https://www.comp.nus.edu.sg/~shweta24/)
+### Panoply Team 
 
-### [Dat Le Tien](https://coinsrs.no/dat-le-tien/)
+#### [Shweta Shinde](https://www.comp.nus.edu.sg/~shweta24/)
 
-### [Shruti Tople](http://www.comp.nus.edu.sg/~shruti90/)
+#### [Dat Le Tien](https://coinsrs.no/dat-le-tien/)
 
-### [Prateek Saxena](https://www.comp.nus.edu.sg/~prateeks/)
+#### [Shruti Tople](http://www.comp.nus.edu.sg/~shruti90/)
+
+#### [Prateek Saxena](https://www.comp.nus.edu.sg/~prateeks/)
  
 
-## Support
+### Support
 
 Having trouble with Panoply? Check out our [FAQ](https://shwetasshinde24.github.io/Panoply/faq.html) or tell us about it [directly]() and we’ll help you sort it out.
 
-## Announcements
+### Announcements
 
 Want to get future updates for Panoply? Join our [Google Group](panoply-announcements@googlegroups.com). 
 
-## Acknowledging Panoply
+### Acknowledging Panoply
 
 Using Panoply in your research projects and want to acknowledge it? Just cite our [NDSS'17 paper](https://www.comp.nus.edu.sg/~shweta24/panoply_ndss17.bib).
 
