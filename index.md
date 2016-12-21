@@ -67,19 +67,54 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Executing the Example
 
 #### build libssl ad libcrypto libraries
+
 <code>
 cd openssl/ssl_bench/topenssl/
 make all -j8
 </code>
+
 #### move the libraries to src folder
+
+<code>
 cp libcrypto.a libssl.a ../src/
+</code>
 
 #### build the enclave and the app
+
+<code>
 cd ../src/
 make all
+</code>
 
 #### run the app
+
+<code>
 ./app sha1
+</code>
+
+#### making changes to the app
+
+* Current code
+
+<code>
+// ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv);
+ret = TopensslEnclave_ecall_test_speed_crypto(global_eid, &ecall_return, argc, argv);
+</code>
+
+* Modified code
+
+<code>
+ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv);
+//ret = TopensslEnclave_ecall_test_speed_crypto(global_eid, &ecall_return, argc, argv);
+</code>
+
+* Build and re-run the app
+
+<code>
+make all
+ ./app -dhe1024dsa -bytes 102400 -num 10 -tls1 -server_auth -time
+</code>
+
 
 ### Writing your own Application
 
