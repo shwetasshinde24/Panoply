@@ -66,7 +66,20 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Executing the Example
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#### build libssl ad libcrypto libraries
+<code>
+cd openssl/ssl_bench/topenssl/
+make all -j8
+</code>
+#### move the libraries to src folder
+cp libcrypto.a libssl.a ../src/
+
+#### build the enclave and the app
+cd ../src/
+make all
+
+#### run the app
+./app sha1
 
 ### Writing your own Application
 
