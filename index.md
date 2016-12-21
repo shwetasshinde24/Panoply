@@ -69,8 +69,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praes
 
 ### Getting the Demo Code
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
-
+Thank you for your interest in Panoply. Please drop me an [email] (mailto:shwetasshinde24@gmail.com) for getting access to the demo code. 
 
 ### Executing the Example
 
@@ -134,7 +133,7 @@ make all
 We have tested the demo in our development environment, and have tried our best to document the procedure to setup a similar environment on your machine. However, several things might go wrong in this process. Following is a list of all the issues we have seen in our experienceL
 
 ### I cannot run the demo. Is something wrong with my SGX SDK or Panoply setup?
-Before starting the Panoply demo setup, ensure that you are able to execute the Sample application shipped with the Intel SDX SDK. If you are not able to execute the SDK Sample code, then something went wrong with your SDX SDK setup. However, if you were able to execute the sample code and only OpenSSL is failing, then perhaps its a Panoply-specific problem. Please drop me an email with the details of the bug / error / runtime failure logs.  
+Before starting the Panoply demo setup, ensure that you are able to execute the Sample application shipped with the Intel SDX SDK. If you are not able to execute the SDK Sample code, then something went wrong with your SDX SDK setup. However, if you were able to execute the sample code and only OpenSSL is failing, then perhaps its a Panoply-specific problem. Please drop me an [email] (mailto:shwetasshinde24@gmail.com) with the details of the bug / error / runtime failure logs.  
 
 ### I am getting a compile time error about "sgx-status.h". Is something wrong with my setup?
 
@@ -165,7 +164,7 @@ Network and Distributed System Security Symposium (NDSS 2017)
 
 ### Panoply Team 
 
-#### [Shweta Shinde](https://www.comp.nus.edu.sg/~shweta24/)
+#### [Shweta Shinde](https://www.comp.nus.edu.sg/~shweta24/): Project Maintainer
 
 #### [Dat Le Tien](https://coinsrs.no/dat-le-tien/)
 
