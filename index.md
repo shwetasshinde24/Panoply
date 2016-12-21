@@ -1,6 +1,7 @@
 ## Panoply Home
 
 You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
@@ -38,6 +39,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
@@ -75,6 +77,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
@@ -112,6 +115,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
 ## Panoply Demo
 
 You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
@@ -151,6 +155,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 ### Writing your own Application
+
 ## FAQs
 
 You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
@@ -188,6 +193,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### I am getting a compile time error about "sgx-status.h". Is something wrong with my setup?
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
 ## Panoply Team 
 
 ### [Shweta Shinde](https://www.comp.nus.edu.sg/~shweta24/)
@@ -212,6 +218,7 @@ Want to get future updates for Panoply? Join our [Google Group](panoply-announce
 Using Panoply in your research projects and want to acknowledge it? Just cite our [NDSS'17 paper](https://www.comp.nus.edu.sg/~shweta24/panoply_ndss17.bib).
 
 Panoply is released under [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
 ## Acknowledgements
 
 
