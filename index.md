@@ -116,26 +116,26 @@ The App.cpp file has the following code:
 
 * Current code
 
-  <code>
-  /* ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv); */
-  ret = TopensslEnclave_ecall_test_speed_crypto(global_eid, &ecall_return, argc, argv);
-  </code>
+<code>
+/* ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv); */
+ret = TopensslEnclave_ecall_test_speed_crypto(global_eid, &ecall_return, argc, argv);
+</code>
 
 You can modify the above code to execute the SSL test. Do the following changes to the code.
 
 * Modified code
 
-  <code>
-  ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv);            
-  /* ret = TopensslEnclave_ecall_test_speed_crypto(global_eid, &ecall_return, argc, argv); */
-  </code>
+<code>
+ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv);           
+/* ret = TopensslEnclave_ecall_test_speed_crypto(global_eid, &ecall_return, argc, argv); */
+</code>
 
 * Build and re-run the app
 
-  <code>
-  make all
-   ./app -dhe1024dsa -bytes 102400 -num 10 -tls1 -server_auth -time
-  </code>
+<code>
+make all
+./app -dhe1024dsa -bytes 102400 -num 10 -tls1 -server_auth -time
+</code>
 
 -----
 
@@ -149,7 +149,7 @@ Before starting the Panoply demo setup, ensure that you are able to execute the 
 
 ### I am getting a compile time error about "sgx-status.h". Is something wrong with my setup?
 
-Don't panic. The SGX SDK version you installed does not have this header file. Download the header file from [here](https://www.dropbox.com/s/w1rhk2ytbfsvlvp/sgx_status.h?dl=0), and place it in the include directory of the SDK installation. The default location for the include direcroty is /opt/intel/sgxsdk/include and the file path is  /opt/intel/sgxsdk/include/sgx_status.h
+The SGX SDK version you installed does not have this header file. Download the header file from [here](https://www.dropbox.com/s/w1rhk2ytbfsvlvp/sgx_status.h?dl=0), and place it in the include directory of the SDK installation. The default location for the include direcroty is /opt/intel/sgxsdk/include and the file path is  /opt/intel/sgxsdk/include/sgx_status.h
 
 ### I do not have a machine with SGX Hardware support. How can I use Panoply?
 
