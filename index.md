@@ -4,15 +4,13 @@ Intel SGX, a new security capability in emerging CPUs, allows user-level applica
 
 We present a new system called Panoply which bridges the gap between the SGX-native abstractions and the standard OS abstractions which feature-rich, commodity Linux applications require. Panoply exposse the standard POSIX abstractions to application logic, including access to filesystems, network, multi-threading, multi-processing and thread synchronization primitives. Further, Panoply enforces a strong integrity property for the inter-enclave interactions, ensuring that the execution of the application follows the legitimate control and data-flow even if the OS misbehaves. Thus, commodity Linux applications can enhance security by splitting their application logic in one or more enclaves, or by importing enclave-libraries, with little effort. In contrast to previous systems that enable comparable richness, Panoply  offers two orders of magnitude lower TCB.
 
-This work will be presented at the 24th The Network and Distributed System Security Symposium 2017 (NDSS '17).
-
 -----
 
 ## Before we begin with Panoply
 
-Panoply is implemented on top of the Intel SDK 1.5 Open Source Beta shipped for Linux Kernel v3.13. Panoply  comprises of a set of API libraries and build extensions. For our case-studies, we modify the application Makefile to use Panoply extensions and library. We add the interface file (.edl) for specifying all the enclave entry-exit points. The Intel SDK edger8r tool uses these files to generate boiler-plate code stubs for enclave.
+Panoply is implemented on top of the Intel SDK 1.5 Open Source Beta shipped for Linux Kernel v3.13. Panoply  comprises of a set of API libraries and build extensions. Before you start using Panoply, you should setup a stable Intel SDK developement environment. Then you can quickly test the Panoply applications. Please follow the instructions below, if you are starting from a fresh non-SGX environment. If you have an existing SGX developement environment, then proceed directly to the [demo](https://shwetasshinde24.github.io/Panoply/#panoply-demo) instructions.
 
-Before you start using Panoply, you should setup a stable Intel SDK developement environment. Then you can quickly test the Panoply applications. Please follow the instructions below, if you are starting from a fresh non-SGX environment. If you have an existing SGX developement environment, then proceed directly to the [demo](https://shwetasshinde24.github.io/Panoply/#panoply-demo) instructions.
+The Linux SGX developer environment comprises of hardware with SGX support, bios support for SGX, the SGX driver, the SGX SDK, and the SGX Platform Software. Out of these, the hardware support epends on your processor and the BIOS support is provided by the vendor. The SGX driver, SDK and PSW are provided by Intel.
 
 ### Hardware Requirements
 
@@ -45,12 +43,12 @@ Following is the software configuration that required for Intel SGX SDK and Pano
 ## Intel SGX Setup
 
 ### Build and Install Intel SGX Driver
-[https://github.com/01org/linux-sgx-driver](https://github.com/01org/linux-sgx-driver)
+[Version 1.6](https://github.com/01org/linux-sgx-driver/tree/sgx_driver_1.6)
 
 
 ###  Build and Install Intel SGX SDK and Intel SGX PSW
 
-[https://github.com/01org/linux-sgx](https://github.com/01org/linux-sgx)
+[Version 1.6](https://github.com/01org/linux-sgx/tree/sgx_1.6)
 
 ### Resources for Troubleshooting
 
