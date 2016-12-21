@@ -1,14 +1,22 @@
 ## Panoply Home
 
-You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
 
 -----
 
 ## Getting Started
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
+
 ### Hardware Requirements
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
+
+
 ### Enable SGX in BIOS
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
+
 
 #### Quick test for checking hardware support
 
@@ -52,17 +60,17 @@ https://github.com/01org/linux-sgx
 
 ## Panoply Demo
 
-You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Platform Setup
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
 
 ### Getting the Demo Code
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shwetasshinde24/Panoply/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
+
 
 ### Executing the Example
 
@@ -123,21 +131,22 @@ make all
 
 ## FAQs
 
-You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+We have tested the demo in our development environment, and have tried our best to document the procedure to setup a similar environment on your machine. However, several things might go wrong in this process. Following is a list of all the issues we have seen in our experienceL
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### I do not have a machine with SGX Hardware support. How can I use Panoply?
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-### I don't have a linux machine with the required kernel version. Can I still try out Panoply?
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shwetasshinde24/Panoply/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### I cannot run the demo. Is something wrong with my SGX SDK or Panoply setup?
+Before starting the Panoply demo setup, ensure that you are able to execute the Sample application shipped with the Intel SDX SDK. If you are not able to execute the SDK Sample code, then something went wrong with your SDX SDK setup. However, if you were able to execute the sample code and only OpenSSL is failing, then perhaps its a Panoply-specific problem. Please drop me an email with the details of the bug / error / runtime failure logs.  
 
 ### I am getting a compile time error about "sgx-status.h". Is something wrong with my setup?
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Don't panic. The SGX SDK version you installed does not have this header file. Download the header file from [here](https://www.dropbox.com/s/w1rhk2ytbfsvlvp/sgx_status.h?dl=0), and place it in the include directory of the SDK installation. The default location for the include direcroty is /opt/intel/sgxsdk/include and the file path is  /opt/intel/sgxsdk/include/sgx_status.h
+
+### I do not have a machine with SGX Hardware support. How can I use Panoply?
+
+Yes, you can setup the SDK in simulation mode for non-SGX machines. Please refer to the [Intel Installation Guide] (https://download.01.org/intel-sgx/linux-1.6/docs/Intel_SGX_SDK_Installation_Guide_Linux_1.6_Open_Source.pdf) to know more about how to setup the simulation enviroment. After the setup, make sure you are able to run the Sample code shipped with the SDK inside the VM. Then, simply follow the steps listed in the Panoply demo setup guide.
+
+### I don't have a linux machine with the required OS and / or kernel version. Can I still try out Panoply?
+
+Yes, you can create a Ubuntu 14.04 VM and install Intel SGX SDK for simulation mode. This will allow you to execute SGX applications. After the setup, make sure you are able to run the Sample code shipped with the SDK inside the VM. Then, simply follow the steps listed in the Panoply demo setup guide.
 
 -----
 
