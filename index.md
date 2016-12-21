@@ -2,7 +2,7 @@
 
 You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
 
-## Welcome to GitHub Pages
+## Publications
 
 You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -40,7 +40,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
-## Welcome to GitHub Pages
+## Getting Started
 
 You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -78,7 +78,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
-## Welcome to GitHub Pages
+## SGX SDK Setup
 
 You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
 
