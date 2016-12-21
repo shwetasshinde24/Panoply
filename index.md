@@ -82,6 +82,9 @@ If you don't have access to the code, please drop me an [email](https://www.comp
 
 <code>
 cd openssl/ssl_bench/topenssl/
+</code>
+
+<code>
 make all -j8
 </code>
 
@@ -97,6 +100,9 @@ cp libcrypto.a libssl.a ../src/
 
 <code>
 cd ../src/
+</code>
+
+<code>
 make all
 </code>
 
@@ -134,6 +140,9 @@ ret = TopensslEnclave_ecall_test_bm_ssl(global_eid, &ecall_return, argc, argv); 
 
 <code>
 make all
+<\code>
+
+<code>
 ./app -dhe1024dsa -bytes 102400 -num 10 -tls1 -server_auth -time
 </code>
 
