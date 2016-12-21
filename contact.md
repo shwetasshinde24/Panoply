@@ -21,4 +21,4 @@ Want to get future updates for Panoply? Join our [Google Group](panoply-announce
 
 Using Panoply in your research projects and want to acknowledge it? Just cite our [NDSS'17 paper](https://www.comp.nus.edu.sg/~shweta24/panoply_ndss17.bib).
 
-Panoply is released un [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+Panoply is released under [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
