@@ -6,6 +6,7 @@ You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/ed
 
 ## Getting Started
 
+-----
 
 
 ## Intel SGX Setup
@@ -21,6 +22,8 @@ You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/ed
 ### Linux Driver
 
 ### [Optional] Eclipse Developement Support
+
+-----
 
 ## Panoply Demo
 
@@ -42,6 +45,9 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ### Writing your own Application
 
+-----
+
+
 ## FAQs
 
 You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
@@ -60,12 +66,18 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
+-----
+
+
 ## Publications
 
 * **"Panoply: Low-TCB Linux Applications With SGX Enclaves"**, 
 _Shweta Shinde, Dat Le Tien, Shruti Tople, and Prateek Saxena_, To appear at 
 Network and Distributed System Security Symposium (NDSS 2017)
 [Paper](https://www.comp.nus.edu.sg/~shweta24/publications/panoply_ndss17.pdf)
+
+-----
+
 
 ## Contact 
 
@@ -93,6 +105,9 @@ Want to get future updates for Panoply? Join our [Google Group](panoply-announce
 * Using Panoply in your research projects and want to acknowledge it? Just [cite](https://www.comp.nus.edu.sg/~shweta24/panoply_ndss17.bib) our [NDSS'17 paper](https://www.comp.nus.edu.sg/~shweta24/publications/panoply_ndss17.pdf).
 
 * Panoply is released under [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+-----
+
 
 ## Acknowledgements
 
