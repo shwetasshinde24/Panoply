@@ -2,43 +2,6 @@
 
 You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
 
-## Publications
-
-You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shwetasshinde24/Panoply/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 ## Getting Started
 
@@ -193,6 +156,16 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### I am getting a compile time error about "sgx-status.h". Is something wrong with my setup?
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+## Publications
+
+**Panoply: Low-TCB Linux Applications With SGX Enclaves**
+
+_Shweta Shinde, Dat Le Tien, Shruti Tople, and Prateek Saxena_
+
+Network and Distributed System Security Symposium (NDSS 2017)
+
+[Paper](https://www.comp.nus.edu.sg/~shweta24/publications/panoply_ndss17.pdf)
 
 ## Contact 
 
