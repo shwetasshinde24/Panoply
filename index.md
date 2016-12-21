@@ -1,6 +1,10 @@
 ## Panoply Home
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
+Intel SGX, a new security capability in emerging CPUs, allows user-level application code to execute in hardwareisolated enclaves. Enclave memory is isolated from all other software on the system, even from the privileged OS or hypervisor. While being a promising hardware-rooted building block, enclaves have severely limited capabilities, such as no native access to system calls and standard OS abstractions. These OS abstractions are used ubiquitously in real-world applications.
+
+We present a new system called Panoply which bridges the gap between the SGX-native abstractions and the standard OS abstractions which feature-rich, commodity Linux applications require. PANOPLY provides a new abstraction called a micro-container (or a “micron”), which is a unit of code and data isolated in SGX enclaves. Microns expose the standard POSIX abstractions to application logic, including access to filesystems, network, multi-threading, multi-processing and thread synchronization primitives. Further, PANOPLY enforces a strong integrity property for the inter-enclave interactions, ensuring that the execution of the application follows the legitimate control and data-flow even if the OS misbehaves. Thus, commodity Linux applications can enhance security by splitting their application logic in one or more microns, or by importing micron-libraries, with little effort. In contrast to previous systems that enable comparable richness, PANOPLY offers two orders of magnitude lower TCB (about 20 KLOC in total), more than half of which is boiler-plate and can be automatically verified in the future. 
+
+This work will be presented at the 24th The Network and Distributed System Security Symposium 2017 (NDSS '17).
 
 -----
 
