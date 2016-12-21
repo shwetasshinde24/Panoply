@@ -1,5 +1,5 @@
 theme: jekyll-theme-leap-day
 title: Panoply
 description: Low-TCB Linux Applications with SGX Enclaves
-show_downloads:"true"
+show_downloads: true
 google_analytics: UA-44220999-2
