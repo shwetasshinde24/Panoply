@@ -1,0 +1,52 @@
+/* TopensslEnclave.edl - Top EDL file. */
+
+enclave {
+        
+    //from "LocalAttestationCode/LocalAttestationCode.edl" import *; 
+    from "Thread/Pthread.edl" import *;
+    from "SysEnvironment/sgx_time.edl" import *;
+    from "sgx_tstdc.edl" import sgx_thread_wait_untrusted_event_ocall, sgx_thread_set_untrusted_event_ocall, sgx_thread_setwait_untrusted_events_ocall, sgx_thread_set_multiple_untrusted_events_ocall;
+    
+    // from "EnclaveUtil/util.edl" import *;
+
+    from "SysEnvironment/sgx_pwd.edl" import *;
+    from "SysEnvironment/sgx_grp.edl" import *;
+    from "SysEnvironment/sgx_utsname.edl" import *;
+    from "SysEnvironment/sgx_getopt.edl" import *;
+    from "IO/sgx_stdlib.edl" import *;
+    from "IO/sgx_fcntl.edl" import *;
+    from "IO/sgx_unistd.edl" import *;
+    from "IO/sgx_stdio.edl" import *;
+    from "IO/sgx_syseventfd.edl" import *;
+    from "IO/sgx_syssocket.edl" import *;
+    from "IO/sgx_netdb.edl" import *;
+    from "IO/sgx_netinetin.edl" import *;
+    from "IO/sgx_sysioctl.edl" import *;
+    from "IO/sgx_sysuio.edl" import *;
+    from "IO/sgx_sysmman.edl" import *;
+    from "IO/sgx_poll.edl" import *;
+    from "IO/sgx_sysepoll.edl" import *;
+    from "IO/sgx_sysselect.edl" import *;
+    from "IO/sgx_syssendfile.edl" import *;
+    from "IO/sgx_syswait.edl" import *;
+    from "IO/sgx_sysstat.edl" import *;
+    from "IO/sgx_dirent.edl" import *;
+    from "IO/sgx_sysresource.edl" import *;
+    from "IO/sgx_arpainet.edl" import *;
+    from "IO/sgx_sysctl.edl" import *;
+    from "IO/sgx_signal.edl" import *;
+    from "ssl.edl" import *;
+    from "Net/sgx_ifaddrs.edl" import *;
+    from "Net/sgx_netif.edl" import *; 
+     
+    untrusted {
+          void print_string([in, string] const char *str);
+          void print_int(int n);
+    };
+
+
+    trusted {
+            public int ecall_test_bm_ssl(int argc, [user_check] char **argv);
+            public int ecall_test_speed_crypto(int argc, [user_check] char **argv);
+    };
+};

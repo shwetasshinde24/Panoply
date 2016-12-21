@@ -1,0 +1,10 @@
+enclave {
+
+    include "struct/sgx_ifaddrs_struct.h"
+
+    untrusted {
+        int ocall_getifaddrs([user_check] struct ifaddrs **ifap);
+        void ocall_freeifaddrs([user_check] struct ifaddrs *ifa);
+    };
+
+};
