@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+## Acknowledgements
 
-You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+We thank Mona Vij and Simon Johnson from Intel for their feedback. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Thanks to Chia-Che Tsai and Donald Porter for releasing code and discussions on Graphene-SGX. 
 
-### Markdown
+This research was partially supported by a grant from the National Research Foundation, Prime Ministers Office, Singapore under its National Cybersecurity R&D Program (TSUNAMi project, No. NRF2014NCR-NCR001-21) and administered by the National Cybersecurity R&D Directorate.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+<p align="center"><img src="http://www.nrf.gov.sg/html/images/common/logo-nrf.png" alt="National Research Foundation, Prime Ministers Office, Singapore" </p>
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shwetasshinde24/Panoply/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
