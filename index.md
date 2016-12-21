@@ -137,9 +137,6 @@ You can modify the above code to execute the SSL test. Do the following changes 
    ./app -dhe1024dsa -bytes 102400 -num 10 -tls1 -server_auth -time
   </code>
 
-
-### Writing your own Application
-
 -----
 
 
