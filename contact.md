@@ -1,6 +1,6 @@
 ## Panoply Team 
 
-### Shweta Shinde
+### [Shweta Shinde](https://www.comp.nus.edu.sg/~shweta24/)
 
 ### Dat Le Tien
 
