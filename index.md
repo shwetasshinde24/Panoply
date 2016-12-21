@@ -1,8 +1,8 @@
-## Panoply Home
+## Panoply Overview
 
 Intel SGX, a new security capability in emerging CPUs, allows user-level application code to execute in hardwareisolated enclaves. Enclave memory is isolated from all other software on the system, even from the privileged OS or hypervisor. While being a promising hardware-rooted building block, enclaves have severely limited capabilities, such as no native access to system calls and standard OS abstractions. These OS abstractions are used ubiquitously in real-world applications.
 
-We present a new system called Panoply which bridges the gap between the SGX-native abstractions and the standard OS abstractions which feature-rich, commodity Linux applications require. PANOPLY provides a new abstraction called a micro-container (or a “micron”), which is a unit of code and data isolated in SGX enclaves. Microns expose the standard POSIX abstractions to application logic, including access to filesystems, network, multi-threading, multi-processing and thread synchronization primitives. Further, PANOPLY enforces a strong integrity property for the inter-enclave interactions, ensuring that the execution of the application follows the legitimate control and data-flow even if the OS misbehaves. Thus, commodity Linux applications can enhance security by splitting their application logic in one or more microns, or by importing micron-libraries, with little effort. In contrast to previous systems that enable comparable richness, PANOPLY offers two orders of magnitude lower TCB (about 20 KLOC in total), more than half of which is boiler-plate and can be automatically verified in the future. 
+We present a new system called Panoply which bridges the gap between the SGX-native abstractions and the standard OS abstractions which feature-rich, commodity Linux applications require. Panoply exposse the standard POSIX abstractions to application logic, including access to filesystems, network, multi-threading, multi-processing and thread synchronization primitives. Further, Panoply enforces a strong integrity property for the inter-enclave interactions, ensuring that the execution of the application follows the legitimate control and data-flow even if the OS misbehaves. Thus, commodity Linux applications can enhance security by splitting their application logic in one or more enclaves, or by importing enclave-libraries, with little effort. In contrast to previous systems that enable comparable richness, Panoply  offers two orders of magnitude lower TCB.
 
 This work will be presented at the 24th The Network and Distributed System Security Symposium 2017 (NDSS '17).
 
@@ -10,7 +10,9 @@ This work will be presented at the 24th The Network and Distributed System Secur
 
 ## Before we begin with Panoply
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. 
+Panoply is implemented on top of the Intel SDK 1.5 Open Source Beta shipped for Linux Kernel v3.13. Panoply  comprises of a set of API libraries and build extensions. For our case-studies, we modify the application Makefile to use Panoply extensions and library. We add the interface file (.edl) for specifying all the enclave entry-exit points. The Intel SDK edger8r tool uses these files to generate boiler-plate code stubs for enclave.
+
+Before you start using Panoply, you should setup a stable Intel SDK developement environment. Then you can quickly test the Panoply applications. Please follow the instructions below, if you are starting from a fresh non-SGX environment. If you have an existing SGX developement environment, then proceed directly to the [demo](https://shwetasshinde24.github.io/Panoply/#panoply-demo) instructions.
 
 ### Hardware Requirements
 
