@@ -1,8 +1,11 @@
 ## Panoply Team 
 
 ### Shweta Shinde
+
 ### Dat Le Tien
+
 ### Shruti Tople
+
 ### Prateek Saxena
  
 
