@@ -6,22 +6,47 @@ You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/ed
 
 ## Getting Started
 
+### Hardware Requirements
+
+### Enable SGX in BIOS
+
+#### Quick test for checking hardware support
+
+https://github.com/ayeks/SGX-hardware
+
+### Software Requirements
+
+* Ubuntu* Desktop-14.04-LTS 64bits
+
+* Linux Kernel v3.13.
+
 -----
 
 
 ## Intel SGX Setup
 
-### System Requirements
+### Build and Install Intel SGX Driver
+https://github.com/01org/linux-sgx-driver
 
-### Enable SGX in BIOS
 
-### Platform Software
+###  Build and Install Intel SGX SDK and Intel SGX PSW
 
-### SDK
+https://github.com/01org/linux-sgx
 
-### Linux Driver
+### Resources for Troubleshooting
 
-### [Optional] Eclipse Developement Support
+#### Intel Developer Zone: 
+
+* [Intel® Software Guard Extensions SDK](https://software.intel.com/en-us/sgx-sdk)
+
+#### Intel Documentation:
+
+* [Installation Guide](https://download.01.org/intel-sgx/linux-1.6/docs/Intel_SGX_SDK_Installation_Guide_Linux_1.6_Open_Source.pdf)
+
+* [Developer Guide](https://download.01.org/intel-sgx/linux-1.6/docs/Intel_SGX_Developer_Guide.pdf)
+
+* [Developer Reference](https://download.01.org/intel-sgx/linux-1.6/docs/Intel_SGX_SDK_Developer_Reference_Linux_1.6_Open_Source.pdf)
+
 
 -----
 
