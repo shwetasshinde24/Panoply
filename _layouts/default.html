@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ site.title | default: site.github.repository_name }} :{{ default: site.github.project_tagline }}</title>
+    <title>{{ site.title | default: site.github.repository_name }} :{{ site.github.project_tagline }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
@@ -45,7 +45,7 @@
       </section>
       <footer>
         {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ https://www.comp.nus.edu.sg/~shweta24/ }}">{{ Shweta Shinde }}</a></p>
+          <p>Project maintained by <a href="https://www.comp.nus.edu.sg/~shweta24/">Shweta Shinde</a></p>
         {% endif %}
 <!--         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p> -->
       </footer>
