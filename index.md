@@ -5,79 +5,21 @@ You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/ed
 
 ## Getting Started
 
-You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Intel SGX Setup
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### System Requirements
 
-```markdown
-Syntax highlighted code block
+### Enable SGX in BIOS
 
-# Header 1
-## Header 2
-### Header 3
+### Platform Software
 
-- Bulleted
-- List
+### SDK
 
-1. Numbered
-2. List
+### Linux Driver
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shwetasshinde24/Panoply/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
-## SGX SDK Setup
-
-You can use the [editor on GitHub](https://github.com/shwetasshinde24/Panoply/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shwetasshinde24/Panoply/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### [Optional] Eclipse Developement Support
 
 ## Panoply Demo
 
@@ -88,26 +30,6 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Platform Setup
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Getting the Demo Code
 
@@ -129,26 +51,6 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
 ### I don't have a linux machine with the required kernel version. Can I still try out Panoply?
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shwetasshinde24/Panoply/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
@@ -159,9 +61,10 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ## Publications
 
-**Panoply: Low-TCB Linux Applications With SGX Enclaves**
-_Shweta Shinde, Dat Le Tien, Shruti Tople, and Prateek Saxena_
+* **"Panoply: Low-TCB Linux Applications With SGX Enclaves"**, 
+_Shweta Shinde, Dat Le Tien, Shruti Tople, and Prateek Saxena_, To appear at 
 Network and Distributed System Security Symposium (NDSS 2017)
+
 [Paper](https://www.comp.nus.edu.sg/~shweta24/publications/panoply_ndss17.pdf)
 
 ## Contact 
