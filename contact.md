@@ -2,11 +2,11 @@
 
 ### [Shweta Shinde](https://www.comp.nus.edu.sg/~shweta24/)
 
-### Dat Le Tien
+### [Dat Le Tien](https://coinsrs.no/dat-le-tien/)
 
-### Shruti Tople
+### [Shruti Tople](http://www.comp.nus.edu.sg/~shruti90/)
 
-### Prateek Saxena
+### [Prateek Saxena](https://www.comp.nus.edu.sg/~prateeks/)
  
 
 ## Support
