@@ -160,11 +160,8 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ## Publications
 
 **Panoply: Low-TCB Linux Applications With SGX Enclaves**
-
 _Shweta Shinde, Dat Le Tien, Shruti Tople, and Prateek Saxena_
-
 Network and Distributed System Security Symposium (NDSS 2017)
-
 [Paper](https://www.comp.nus.edu.sg/~shweta24/publications/panoply_ndss17.pdf)
 
 ## Contact 
