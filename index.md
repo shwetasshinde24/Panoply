@@ -8,16 +8,16 @@ We present a new system called Panoply which bridges the gap between the SGX-nat
 
 ## Before we begin with Panoply
 
-Panoply is implemented on top of the Intel SDK 1.5 Open Source Beta shipped for Linux Kernel v3.13. Panoply  comprises of a set of API libraries and build extensions. Before you start using Panoply, you should setup a stable Intel SDK developement environment. Then you can quickly test the Panoply applications. Please follow the instructions below, if you are starting from a fresh non-SGX environment. If you have an existing SGX developement environment, then proceed directly to the [demo](https://shwetasshinde24.github.io/Panoply/#panoply-demo) instructions.
+Panoply is implemented on top of the Intel SDK 1.6 shipped for Linux Kernel v3.13. Panoply  comprises of a set of API libraries and build extensions. Before you start using Panoply, you should setup a stable Intel SDK developement environment. Then you can quickly test the Panoply applications. Please follow the instructions below, if you are starting from a fresh non-SGX environment. If you have an existing SGX developement environment, then proceed directly to the [demo](https://shwetasshinde24.github.io/Panoply/#panoply-demo) instructions.
 
-The Linux SGX developer environment comprises of hardware with SGX support, bios support for SGX, the SGX driver, the SGX SDK, and the SGX Platform Software. Out of these, the hardware support epends on your processor and the BIOS support is provided by the vendor. The SGX driver, SDK and PSW are provided by Intel.
+The Linux SGX developer environment comprises of hardware with SGX support, bios support for SGX, the SGX driver, the SGX SDK, and the SGX Platform Software. Out of these, the hardware support depends on your processor and the BIOS support is provided by the vendor. The SGX driver, SDK and PSW are provided by Intel.
 
 ### Hardware Support and BIOS Settings
 
 * Check if your machine is listed in the following list of hardware which supports Intel SGX 
 [https://github.com/ayeks/SGX-hardware](https://github.com/ayeks/SGX-hardware)
 
-* Ensure that you have enables SGX support in your BIOS. 
+* Ensure that you have enabled SGX support in your BIOS. 
 
 * Run the test-sgx.c code from [https://github.com/ayeks/SGX-hardware](https://github.com/ayeks/SGX-hardware) to quickly  check if  SGX is available for your CPU and enabled in BIOS.
  
@@ -78,10 +78,14 @@ If you don't have access to the code, please drop me an [email](https://www.comp
 
 #### Extract the zip file
 
+<code>
+unzip Panoply-demo-openssl.zip
+</code>
+
 #### Build libssl and libcrypto libraries
 
 <code>
-cd openssl/ssl_bench/topenssl/
+cd Panoply-demo-openssl/topenssl/
 </code>
 
 <code>
@@ -90,7 +94,7 @@ make all -j8
 
 This produces _libssl.a_ and _libcrypto.a_ files in the topenssl folder.
 
-#### Move the libraries to src folder
+#### Copy the libraries to src folder
 
 <code>
 cp libcrypto.a libssl.a ../src/
@@ -157,7 +161,7 @@ make all
 
 ## FAQs
 
-We have tested the demo in our development environment, and have tried our best to document the procedure to setup a similar environment on your machine. However, several things might go wrong in this process. Following is a list of all the issues we have seen in our experienceL
+We have tested the demo in our development environment, and have tried our best to document the procedure to setup a similar environment on your machine. However, several things might go wrong in this process. Following is a list of all the issues we have seen in our experience.
 
 ### I cannot run the demo. Is something wrong with my SGX SDK or Panoply setup?
 Before starting the Panoply demo setup, ensure that you are able to execute the Sample application shipped with the Intel SDX SDK. If you are not able to execute the SDK Sample code, then something went wrong with your SDX SDK setup. However, if you were able to execute the sample code and only OpenSSL is failing, then perhaps its a Panoply-specific problem. Please drop me an [email](https://www.comp.nus.edu.sg/~shweta24/) with the details of the bug / error / runtime failure logs.  
