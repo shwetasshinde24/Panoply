@@ -118,7 +118,11 @@ This produces a _TopensslEnclave.signed.so_ file for enclave and an _app_ file f
 ./app sha1
 </code>
 
-The above command is just an example. You can try other tests for the OpenSSL benchmark. For running the complete benchmark, just run the app file without any arguments.  
+The above command is just an example. You can try other tests for the OpenSSL benchmark. For running the complete benchmark, just run the app file without any arguments. 
+
+<code>
+./app
+</code>
 
 #### Making changes to the App
 
