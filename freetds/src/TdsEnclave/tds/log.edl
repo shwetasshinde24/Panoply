@@ -1,0 +1,9 @@
+
+
+enclave {
+
+    untrusted	{
+		// void tdsdump_log([in, string]const char* file, unsigned int level_line, [in, string] const char *fmt, ...)
+    };
+
+};

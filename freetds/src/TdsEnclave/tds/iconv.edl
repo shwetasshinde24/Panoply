@@ -1,0 +1,12 @@
+
+
+enclave {
+
+    untrusted	{
+		char *tds_timestamp_str([out, size=maxlen]char *str, int maxlen);
+		int tds_getservice([in, string] const char* name);
+		char *tds_get_homedir(void);
+		
+    };
+
+};

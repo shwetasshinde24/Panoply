@@ -1,0 +1,10 @@
+
+
+enclave {
+    
+    untrusted {
+        void tds_sleep_s(unsigned int sec);
+        void tds_sleep_ms(unsigned int msec);
+    };
+
+};

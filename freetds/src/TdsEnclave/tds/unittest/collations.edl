@@ -1,0 +1,9 @@
+
+
+enclave {
+
+    trusted	{
+		public int ecall_unittest_collations_main(int argc, [user_check]char **argv); 
+    };
+
+};

@@ -1,0 +1,15 @@
+
+
+enclave {
+
+	include "freetds/tds_struct.h"
+
+	trusted	{
+		public void ecall_tds_alloc_login(int use_environment, [user_check]TDSLOGIN *login);
+	};
+
+    untrusted	{
+		
+    };
+
+};

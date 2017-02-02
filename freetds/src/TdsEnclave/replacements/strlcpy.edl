@@ -1,0 +1,9 @@
+
+
+enclave {
+    
+    trusted	{
+    	public size_t tds_strlcpy([user_check] char *dest, [in, string] const char *src, size_t len);
+    };
+
+};

@@ -1,0 +1,108 @@
+#ifndef SGX_SYSSOCKET_UTIL_H
+#define SGX_SYSSOCKET_UTIL_H
+
+#include "struct/sgx_syssocket_struct.h"
+#include "proxy/sgx_syssocket_t.h"
+
+static inline int sgx_wrapper_shutdown(int fd, int how)
+{
+	int retval;
+	ocall_shutdown(&retval, fd, how);
+	return retval;
+}
+static inline ssize_t sgx_wrapper_recv(int fd, void *buf, size_t len, int flags)
+{
+	ssize_t retval;
+	ocall_recv(&retval, fd, buf, len, flags);
+	return retval;
+}
+static inline ssize_t sgx_wrapper_send(int fd, const void *buf, size_t len, int flags)
+{
+	ssize_t retval;
+	ocall_send(&retval, fd, buf, len, flags);
+	return retval;
+}  
+
+static inline unsigned short sgx_wrapper_htons(unsigned short port)	
+{
+	unsigned short retval;
+	ocall_htons(&retval, port);
+	return retval;
+}
+
+static inline int sgx_wrapper_connect(int soc, void *address_cast, unsigned int address_len)
+{
+	int retval;
+	ocall_connect(&retval, soc, address_cast, address_len);
+	return retval;
+}
+
+static inline int sgx_wrapper_socket(int domain, int type, int protocol)
+{
+	int retval;
+	ocall_socket(&retval, domain, type, protocol);
+	return retval;
+}
+
+static inline int sgx_wrapper_accept(int sockfd, void *addr_cast, unsigned int *addrlen)
+{
+	int retval;
+	ocall_accept(&retval, sockfd, addr_cast, addrlen);
+	return retval;
+}
+
+static inline ssize_t sgx_wrapper_sendto(int sockfd, const void *buf, size_t len, int flags, const void *dest_addr_cast, unsigned int addrlen)
+{
+	ssize_t retval;
+	ocall_sendto(&retval, sockfd, buf, len, flags, dest_addr_cast, addrlen);
+	return retval;
+}
+
+static inline int sgx_wrapper_socketpair(int domain, int type, int protocol, int sv[2])
+{
+	int retval;
+	ocall_socketpair(&retval, domain, type, protocol, sv);
+	return retval;
+}
+
+static inline int sgx_wrapper_setsockopt(int sockfd, int level, int optname, const void *optval, unsigned int optlen)
+{
+	int retval;
+	ocall_setsockopt(&retval, sockfd, level, optname, optval, optlen);
+	return retval;
+}
+
+static inline int sgx_wrapper_getsockopt(int sockfd, int level, int optname, void *optval, unsigned int *optlen)
+{
+	int retval;
+	ocall_getsockopt(&retval, sockfd, level, optname, optval, optlen);
+	return retval;
+}
+
+static inline void sgx_wrapper_freeaddrinfo(void * res_cast)
+{
+	ocall_freeaddrinfo(res_cast);
+}
+
+static inline int sgx_wrapper_getaddrinfo(const char *node, const char *service, const void *hints_cast, void **res_cast)
+{
+	int retval;
+	ocall_getaddrinfo(&retval, node, service, hints_cast, res_cast);
+}
+
+// #define shutdown(A, B) sgx_wrapper_shutdown(A,B)
+#define recv(A, B, C, D) sgx_wrapper_recv(A, B, C, D)
+#define send(A, B, C, D) sgx_wrapper_send(A, B, C, D)
+#define htons(A) sgx_wrapper_htons(A)
+#define connect(A, B, C) sgx_wrapper_connect(A, B, C)
+#define socket(A, B, C) sgx_wrapper_socket(A, B, C)
+#define accept(A, B, C) sgx_wrapper_accept(A, B, C)
+#define sendto(A, B, C, D, E, F) sgx_wrapper_sendto(A, B, C, D, E, F)
+#define socketpair(A, B, C, D) sgx_wrapper_socketpair(A, B, C, D)
+#define setsockopt(A, B, C, D, E) sgx_wrapper_setsockopt(A, B, C, D, E)
+#define getsockopt(A, B, C, D, E) sgx_wrapper_getsockopt(A, B, C, D, E)
+#define freeaddrinfo(A) sgx_wrapper_freeaddrinfo(A)
+#define getaddrinfo(A, B, C, D) sgx_wrapper_getaddrinfo(A, B, C, D)
+
+#endif
+

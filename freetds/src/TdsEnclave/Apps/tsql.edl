@@ -1,0 +1,15 @@
+
+
+enclave {
+
+	// include "freetds/tds_struct.h"
+
+	trusted	{
+		public int ecall_tsql_main(int argc, [user_check]char** argv);
+	};
+
+    untrusted	{
+		
+    };
+
+};

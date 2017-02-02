@@ -1,0 +1,11 @@
+
+
+enclave {
+
+	include "freetds/tds_struct.h"
+
+    untrusted	{
+		void tds_getmac(TDS_SYS_SOCKET s, [out]unsigned char mac[6]);
+    };
+
+};

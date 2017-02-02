@@ -1,0 +1,28 @@
+/* Enclave.edl - Top EDL file. */
+
+enclave {
+
+    /* 
+     * ocall_print_string - invokes OCALL to display string buffer inside the enclave.
+     *  [in]: copy the string buffer to App outside.
+     *  [string]: specifies 'str' is a NULL terminated buffer.
+     */
+    untrusted {
+        long ocall_i2d_OCSP_RESPID([user_check] void* id,[user_check] void* d);
+        void ocall_OCSP_RESPID_free([user_check]void *id);
+        
+        // Return pointer of type OCSP_RESPID8, 
+        void* ocall_d2i_OCSP_RESPID( [user_check] unsigned char *data, [user_check] unsigned char ** sdata_pointer, int idsize );
+
+        // Return pointer to BIO METHOD function
+        void * ocall_BIO_s_file_internal(void);
+        void * ocall_BIO_s_file(void);
+
+        /* The pointer type is OPENSSL_DIR_CTX  */
+        char * ocall_OPENSSL_DIR_read([user_check] void **ctx, [in, string] const char *directory);
+
+        /* The pointer type is OPENSSL_DIR_CTX returns 1 on success, 0 on error */
+        int ocall_OPENSSL_DIR_end([user_check] void **ctx);
+    };
+
+};

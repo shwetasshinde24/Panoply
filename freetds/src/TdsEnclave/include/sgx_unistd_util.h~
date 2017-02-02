@@ -1,0 +1,54 @@
+#ifndef SGX_UNISTD_UTIL_H
+#define SGX_UNISTD_UTIL_H
+
+#include "proxy/sgx_unistd_t.h"
+
+static inline int sgx_wrapper_gethostname(char *name, size_t len)
+{
+	int retval;
+	ocall_gethostname(&retval, name, len);
+	return retval;
+}
+static inline int sgx_wrapper_sethostname(const char *name, size_t len)
+{
+	int retval;
+	ocall_sethostname(&retval, name, len);
+	return retval;
+}
+ 
+static inline long sgx_wrapper_lseek(int fd, long offset, int whence)
+{
+	long retval;
+	ocall_lseek(&retval, fd, offset, whence);
+	return retval;
+}
+
+static inline long sgx_wrapper_read(int fd, void *buf, size_t count)
+{
+	long retval;
+	ocall_read(&retval, fd, buf, count);
+	return retval;
+}
+
+static inline long sgx_wrapper_write(int fd, const void *buf, size_t count)
+{
+	long retval;
+	ocall_write(&retval, fd, buf, count);
+	return retval;
+}
+static inline int sgx_wrapper_close(int fd)
+{
+	int retval;
+	ocall_close(&retval, fd);
+	return retval;
+}
+
+#define gethostname(A, B) sgx_wrapper_gethostname(A, B)
+#define sethostname(A, B) sgx_wrapper_sethostname(A, B)
+#define read(A, B, C) sgx_wrapper_read(A, B, C)
+#define write(A, B, C) sgx_wrapper_write(A, B, C)
+#define close(A) sgx_wrapper_close(A)
+#define lseek(A, B, C) sgx_wrapper_lseek(A, B, C)
+
+#endif
+

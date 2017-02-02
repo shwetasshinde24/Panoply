@@ -1,0 +1,19 @@
+
+
+enclave {
+
+	// include "enclave_net_wrapper.h"
+
+	trusted	{
+		public int ecall_tds7_get_instance_ports(SGX_WRAPPER_FILE output, [user_check] void *addr);
+		public int ecall_tds7_get_instance_port([user_check] void *addr, [in, string]const char *instance);
+	};
+
+    untrusted	{
+		
+		/* tds_net.cpp */
+		int wrapper_tds_socket_set_nonblocking(int sock);
+		char* wrapper_tds_addrinfo2str([user_check]void *addr, [out, size=namemax]char *name, int namemax);
+    };
+
+};

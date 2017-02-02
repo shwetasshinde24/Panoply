@@ -1,0 +1,8 @@
+
+
+enclave {
+    
+    untrusted {
+        char *wrapper_tds_readpassphrase([user_check] const char *prompt, [in, out, size=bufsize]char *buf, size_t bufsize, int flags);
+    };
+};

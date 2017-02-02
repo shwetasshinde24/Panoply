@@ -1,0 +1,10 @@
+
+
+enclave {
+
+    untrusted	{
+    	// public char *tds_getpassarg([in, string]char *arg);
+		// char * wrapper_tds_readpassphrase([in, string]const char *prompt, [out, size=bufsize]char   // *buf, size_t bufsiz, int flags);    	
+    };
+
+};
