@@ -1,0 +1,11 @@
+
+
+enclave {
+
+	include "struct/sgx_syseventfd_struct.h"
+    untrusted	{			
+		/* syseventfd.h ocall function */
+		int ocall_eventfd(unsigned int initval, int flags);
+    };
+
+};

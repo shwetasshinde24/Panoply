@@ -1,0 +1,20 @@
+
+
+enclave {
+
+	// include "enclave_net_wrapper.h"
+
+    untrusted	{
+			
+		/* unistd.h ocall function */
+		int ocall_gethostname([out, size=len]char *name, size_t len);
+		int ocall_sethostname([in, size=len]const char *name, size_t len);
+		long ocall_lseek(int fd, long offset, int whence);   
+		long ocall_read(int fd, [out, size=count]void *buf, size_t count);
+		long ocall_write(int fd, [in, size=count]const void *buf, size_t count);
+		int ocall_close(int fd);
+
+
+    };
+
+};

@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="false">
+    <generated />
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="false" GENERATION_PASS_SYSTEM_ENVIRONMENT="true">
+    <ADDITIONAL_GENERATION_ENVIRONMENT>
+      <envs />
+    </ADDITIONAL_GENERATION_ENVIRONMENT>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6842d62a-3c08-44e4-b2a5-550e2efe609d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/Makefile.am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/bcp.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/checkexport.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/connectparams.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/convert_tds2sql.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/descriptor.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/error.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/native.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/odbc.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/odbc.def" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/odbc_checks.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/odbc_data.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/odbc_export.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/odbc_util.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/odbc_w.def" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/prepare_query.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/resource.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/setup.rc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/sql2tds.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/sqlwchar.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/sqlwparams.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/Makefile.am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/array.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/array_error.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/array_out.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/attributes.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/attributes.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/base.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/bcp.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/binary_test.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/blob1.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/c2string.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/cancel.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/closestmt.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/common.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/common.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/compute.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/connect.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/connect2.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/const_params.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/convert_error.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/copydesc.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/cursor1.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/cursor2.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/cursor3.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/cursor4.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/cursor5.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/cursor6.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/cursor7.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/data.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/data.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/date.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/descrec.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/describecol.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/describecol.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/describecol2.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/earlybind.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/error.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/freeclose.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/funccall.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/genparams.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/getdata.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/hidden.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/insert_speed.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/lang_error.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/long_error.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/mars1.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/moreandcount.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/norowset.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/oldpwd.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/paramcore.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/params.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/parser.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/parser.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/peter.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/prepare_results.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/prepare_warn.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/prepclose.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/preperror.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/print.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/putdata.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/raiserror.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/rebindpar.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/rownumber.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/rowset.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/rpc.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/scroll.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/stats.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/t0001.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/t0002.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/t0003.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/t0004.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/tables.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/test64.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/testodbc.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/timeout.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/timeout2.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/timeout3.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/timeout4.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/transaction.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/transaction2.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/type.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/typeinfo.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/utf8.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/utf8_2.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/warning.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/unittests/wchar.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/version.rc.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/winlogin.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/winmain.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/odbc/winsetup.c" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/freetds/tds.h" afterPath="$PROJECT_DIR$/include/freetds/tds.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/freetds/thread.h" afterPath="$PROJECT_DIR$/include/freetds/thread.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/freetds/time.h" afterPath="$PROJECT_DIR$/include/freetds/time.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/replacements.h" afterPath="$PROJECT_DIR$/include/replacements.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/replacements/getpassarg.c" afterPath="$PROJECT_DIR$/src/replacements/getpassarg.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/replacements/sleep.c" afterPath="$PROJECT_DIR$/src/replacements/sleep.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/replacements/tds_cond.c" afterPath="$PROJECT_DIR$/src/replacements/tds_cond.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tds/bulk.c" afterPath="$PROJECT_DIR$/src/tds/bulk.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tds/config.c" afterPath="$PROJECT_DIR$/src/tds/config.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tds/net.c" afterPath="$PROJECT_DIR$/src/tds/net.c" />
+    </list>
+    <ignored path="freetds.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="freetds" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="tds.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/freetds/tds.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="611">
+              <caret line="1478" column="34" selection-start-line="1478" selection-start-column="34" selection-end-line="1478" selection-end-column="34" />
+              <folding>
+                <element signature="e#49078#49112#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thread.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/include/freetds/thread.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-555">
+              <caret line="528" column="0" selection-start-line="528" selection-start-column="0" selection-end-line="528" selection-end-column="0" />
+              <folding>
+                <element signature="e#11697#11707#0" expanded="false" />
+                <element signature="e#11762#11823#0" expanded="false" />
+                <element signature="e#11825#11899#0" expanded="false" />
+                <element signature="e#11901#11964#0" expanded="false" />
+                <element signature="e#11966#12037#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thread.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dblib/unittests/thread.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/include/freetds/tds.h" />
+        <option value="$PROJECT_DIR$/include/freetds/thread.h" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="227" />
+    <option name="y" value="24" />
+    <option name="width" value="1000" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freetds" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freetds" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freetds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freetds" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freetds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freetds" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freetds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freetds" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freetds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="freetds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="freetds" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="freetds" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="freetds" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="freetds" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="freetds" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="freetds" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="freetds" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6842d62a-3c08-44e4-b2a5-550e2efe609d" name="Default" comment="" />
+      <created>1461572564305</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1461572564305</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="227" y="24" width="1000" height="744" extended-state="4" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2332815" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/include/freetds/tds.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#49078#49112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/freetds/thread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#11697#11707#0" expanded="false" />
+            <element signature="e#11762#11823#0" expanded="false" />
+            <element signature="e#11825#11899#0" expanded="false" />
+            <element signature="e#11901#11964#0" expanded="false" />
+            <element signature="e#11966#12037#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dblib/unittests/thread.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/freetds/string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/freetds/bool.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/freetds/time.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dblib/unittests/thread.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/freetds/tds.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="1478" column="34" selection-start-line="1478" selection-start-column="34" selection-end-line="1478" selection-end-column="34" />
+          <folding>
+            <element signature="e#49078#49112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/freetds/thread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-555">
+          <caret line="528" column="0" selection-start-line="528" selection-start-column="0" selection-end-line="528" selection-end-column="0" />
+          <folding>
+            <element signature="e#11697#11707#0" expanded="false" />
+            <element signature="e#11762#11823#0" expanded="false" />
+            <element signature="e#11825#11899#0" expanded="false" />
+            <element signature="e#11901#11964#0" expanded="false" />
+            <element signature="e#11966#12037#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

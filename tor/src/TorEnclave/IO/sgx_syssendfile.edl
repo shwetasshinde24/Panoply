@@ -1,0 +1,8 @@
+enclave {
+
+	include "sgx/sys/types.h"
+    untrusted {
+        ssize_t ocall_sendfile(int out_fd, int in_fd, [in, out, size=count] off_t *offset, size_t count);
+    };
+
+};

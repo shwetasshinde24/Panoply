@@ -1,0 +1,9 @@
+#tor --quiet 
+../Tor_enclave/src/app -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/000a/torrc
+../Tor_enclave/src/app -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/001a/torrc
+../Tor_enclave/src/app -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/002a/torrc
+../Tor_enclave/src/app -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/003r/torrc
+../Tor_enclave/src/app -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/004r/torrc
+../Tor_enclave/src/app -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/005r/torrc
+tor -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/006c/torrc
+
