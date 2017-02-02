@@ -1,0 +1,15 @@
+enclave {
+
+    untrusted {
+    
+        int ocall_open1([in, string] const char *pathname, int flags);
+        int ocall_open2([in, string] const char *pathname, int flags, unsigned int mode);
+        int ocall_creat([in, string] const char *pathname, unsigned int mode);
+        int ocall_openat1(int dirfd, [in, string] const char *pathname, int flags);
+        int ocall_openat2(int dirfd, [in, string] const char *pathname, int flags, unsigned int mode);
+        int ocall_fcntl1(int fd, int cmd);
+        int ocall_fcntl2(int fd, int cmd, long arg);
+        int ocall_fcntl3(int fd, int cmd, [in, size=flock_size] void* arg, int flock_size);
+    };
+
+};

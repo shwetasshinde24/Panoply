@@ -1,0 +1,54 @@
+
+
+enclave {
+    
+
+    /*
+        define ocall wrap all stdio function for the enclave
+    */
+    include "stdarg.h"
+    include "sgx/sys/types.h"
+    include "struct/sgx_stdio_struct.h"
+
+    untrusted {
+    
+        SGX_WRAPPER_FILE ocall_fopen([in, string] const char* filename, [in, string] const char* mode);
+        int ocall_fclose(SGX_WRAPPER_FILE FILESTREAM);
+        int ocall_fputs([in, string] const char* str, SGX_WRAPPER_FILE FILESTREAM);
+        int ocall_feof(SGX_WRAPPER_FILE FILESTREAM);
+        void ocall_rewind(SGX_WRAPPER_FILE FILESTREAM);
+        int ocall_fflush(SGX_WRAPPER_FILE FILESTREAM);
+        size_t ocall_fread([out, size=size, count=nmemb]void *ptr, size_t size, size_t nmemb, SGX_WRAPPER_FILE FILESTREAM);
+        size_t ocall_fwrite([in, size=size, count=count]const void * ptr, size_t size, size_t count, SGX_WRAPPER_FILE FILESTREAM);
+        int ocall_vfprintf(SGX_WRAPPER_FILE FILESTREAM, [in, string]const char* format, [user_check] void* val);
+        int ocall_vprintf([in, string]const char* format, [user_check] void* val);
+        char* ocall_fgets([out, size=num] char *str, int num, SGX_WRAPPER_FILE FILESTREAM);
+        int ocall_getc_unlocked(SGX_WRAPPER_FILE FILESTREAM);
+        void ocall_flockfile(SGX_WRAPPER_FILE filehandle);
+        void ocall_funlockfile(SGX_WRAPPER_FILE filehandle);
+        int ocall_vsprintf([user_check] char* string, [in, string]const char* format, [user_check] void* val);
+        int ocall_vasprintf([user_check] char** string, [in, string]const char* format, [user_check] void* val);
+        off_t ocall_ftello(SGX_WRAPPER_FILE FILESTREAM);
+        int ocall_fseeko(SGX_WRAPPER_FILE FILESTREAM, off_t offset, int whence);
+        off_t ocall_ftell(SGX_WRAPPER_FILE FILESTREAM);
+        int ocall_fseek(SGX_WRAPPER_FILE FILESTREAM, off_t offset, int whence);
+        int ocall_ferror(SGX_WRAPPER_FILE FILESTREAM);
+        void ocall_perror([in, string] const char* s);
+
+        int ocall_getc(SGX_WRAPPER_FILE FILESTREAM);
+        int ocall_vfscanf(SGX_WRAPPER_FILE s, [in, string]const char *format, [user_check] void* val);
+        int ocall_vscanf([in, string]const char *format, [user_check] void* val);
+        int ocall_vsscanf([in, string] const char* s, [in, string]const char *format, [user_check] void* val);
+        int ocall_putchar(int c);
+        int ocall_putc (int c, SGX_WRAPPER_FILE stream);
+        int ocall_fputc (int c, SGX_WRAPPER_FILE stream);
+        SGX_WRAPPER_FILE ocall_fdopen(int fd, [in, string] const char *modes);    
+        int ocall_fileno(SGX_WRAPPER_FILE stream); 
+        int ocall_rename([in, string]const char* _old, [in, string]const char* _new);
+
+        // new ocall to fix __VAARG_BUG__ in hardware mode
+        int ocall_print_string([in, string] const char* s);
+        int ocall_fprint_string(SGX_WRAPPER_FILE stream, [in, string] const char* s);
+    };
+
+};

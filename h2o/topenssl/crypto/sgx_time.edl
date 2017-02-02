@@ -1,0 +1,7 @@
+enclave{
+    include "time.h"
+    untrusted{
+        time_t ocall_time( [out] time_t *t);
+        int ocall_gettimeofday([user_check] void *tv, [user_check] void *tz);
+    };
+};
