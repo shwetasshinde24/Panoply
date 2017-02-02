@@ -205,8 +205,10 @@ Network and Distributed System Security Symposium (NDSS 2017)
 
 #### [Shruti Tople](http://www.comp.nus.edu.sg/~shruti90/)
 
-#### [Prateek Saxena](https://www.comp.nus.edu.sg/~prateeks/)
- 
+#### [Priya Deb](http://www.comp.nus.edu.sg/~priya/)
+
+#### [Prateek Saxena](https://www.comp.nus.edu.sg/~prateeks/) 
+
 
 ### Support
 
