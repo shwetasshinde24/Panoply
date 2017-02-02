@@ -1,0 +1,26 @@
+
+
+enclave {
+
+	// include "enclave_net_wrapper.h"
+	include "sgx/sys/types.h"
+	include "sgx/sys/stat.h"
+
+    untrusted	{
+		int ocall_stat([in, string]const char *path, [out] struct stat *buf);
+		int ocall_fstat(int fd, [out] struct stat *buf);
+		int ocall_lstat([in, string]const char *path, [out] struct stat *buf);
+		int ocall_chmod ([in, string]const char *file, mode_t mode);
+		// int ocall_lchmod ([in, string]const char *file, mode_t mode);
+		int ocall_fchmod (int fd, mode_t mode);
+		int ocall_fchmodat (int fd, [in, string]const char *file, mode_t mode,
+		     int flag);
+		mode_t ocall_umask (mode_t mask);
+		// mode_t ocall_getumask (void);
+		int ocall_mkdir ([in, string]const char *path, mode_t mode);
+		int ocall_mkdirat (int fd, [in, string]const char *path, mode_t mode);
+		int ocall_mkfifo ([in, string]const char *path, mode_t mode);
+		int ocall_mkfifoat (int fd, [in, string]const char *path, mode_t mode);
+    };
+
+};

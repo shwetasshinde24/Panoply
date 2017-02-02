@@ -1,0 +1,6 @@
+enclave{
+
+    untrusted{
+        char *wrapper_setlocale(int category, [in, string]const char *locale);
+    };
+};

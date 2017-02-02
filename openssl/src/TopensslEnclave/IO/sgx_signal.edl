@@ -1,0 +1,19 @@
+enclave {
+
+	include "struct/sgx_signal_struct.h"
+
+    untrusted {
+		int ocall_sigemptyset([user_check] sigset_t *set);
+		int ocall_sigfillset([user_check] sigset_t *set);
+		int ocall_sigaddset([user_check] sigset_t *set, int signo);
+		int ocall_sigdelset([user_check] sigset_t *set, int signo);
+		int ocall_sigismember([user_check] const sigset_t *set, int signo);
+		int ocall_sigsuspend([user_check] const sigset_t *set);
+		int ocall_sigaction(int sig, [user_check] const struct sigaction *act, [user_check] struct sigaction *oact);
+		int ocall_sigpending([user_check] sigset_t *set);
+		int ocall_sigwait([user_check] const sigset_t *set,[user_check] int *sig);
+		__sighandler_t ocall_signal(int __sig, __sighandler_t __handler);
+		int ocall_raise(int sig);
+    };
+
+};
