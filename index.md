@@ -71,8 +71,7 @@ We are releasing the OpenSSL library and the corresponding benchmarks and unit t
 
 ### Getting the Demo Code
 
-Thank you for your interest in Panoply. You should have received a Dropbox URL for the demo code via Panoply-announcements Group. 
-If you don't have access to the code, please drop me an [email](https://www.comp.nus.edu.sg/~shweta24/) for getting access to the demo code. 
+You can download the demo code from the [project branch] (https://github.com/shwetasshinde24/Panoply/tree/demo-openssl) 
 
 ### Executing the OpenSSL Demo Example
 
