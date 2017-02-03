@@ -165,6 +165,20 @@ make all
 
 The released case-studies and the benchmarks are available from the [Panoply code repository](https://github.com/shwetasshinde24/Panoply)
 
+### Case-studies
+
+ - [OpenSSL](https://github.com/shwetasshinde24/Panoply/tree/master/case-studies/openssl)
+
+ - [FreeTDS](https://github.com/shwetasshinde24/Panoply/tree/master/case-studies/freetds)
+
+ - [H2O Webserver](https://github.com/shwetasshinde24/Panoply/tree/master/case-studies/h2o)
+
+ - [Tor](https://github.com/shwetasshinde24/Panoply/tree/master/case-studies/tor)
+
+### Benchmarks
+
+ - [LMBench](https://github.com/shwetasshinde24/Panoply/tree/master/benchmarks/lmbench)
+
 -----
 
 
