@@ -1,0 +1,78 @@
+\noaddpoints % to omit double points count
+\begin{parts}
+\part[10] Calculate $f'(x)$.
+\part[10] Calculate $f''(x)$.
+\end{parts}
+
+\question[2] One of these things is not like the others; one of these
+things is not the same. Which one is different?
+\begin{oneparchoices}
+\choice John
+\choice Paul
+\choice George
+\choice Ringo
+\choice Socrates
+\end{oneparchoices}
+
+\question[3] Mark box if true.
+\addpoints
+\begin{checkboxes}
+\choice 2+2=4
+\choice $\frac{d}{dx} (x^2+1) = 2x+1$
+\choice The Moon is made of cheese.
+\end{checkboxes}
+
+{%
+\checkboxchar{$\Box$} % changing checkbox style locally
+\question[3] Mark box if true.
+\addpoints
+\begin{checkboxes}
+\choice 2+2=4
+\choice $\frac{d}{dx} (x^2+1) = 2x+1$
+\choice The Moon is made of cheese.
+\end{checkboxes}
+}%
+
+{%
+% changing choice items style locally
+\renewcommand*\thechoice{\arabic{choice}} 
+\renewcommand*\choicelabel{\thechoice)}
+%
+\question[2] Element with $Z=92$ is:
+\begin{multicols}{2}
+\begin{choices}
+\choice H
+\choice O
+\choice F
+\choice S
+\choice Ba
+\choice Pb
+\choice U
+\choice Pu
+\end{choices}
+\end{multicols}
+}%
+
+\question[10]
+In no more than one paragraph, explain why the earth is round.
+\makeemptybox{2in}
+
+\question[20]
+Explain blah, blah\ldots
+\makeemptybox{\fill}
+
+\newpage
+
+\question[20]
+Explain blah, blah\ldots
+\fillwithlines{\fill}
+
+\newpage
+
+\question[20]
+Explain blah, blah\ldots
+\fillwithdottedlines{8em}
+
+\end{questions}
+
+\end{document}

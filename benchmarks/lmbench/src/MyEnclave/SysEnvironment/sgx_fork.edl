@@ -1,0 +1,14 @@
+enclave{
+	trusted {
+		public void ecall_fork_enter_main([user_check]void *seal_buffer, int bufsiz, int argc, [user_check] char** argv, int main_index);
+    	// The metadata needed by fork 
+    	public int ecall_set_parsed_section_info([in, string]const char* name, int type, size_t val);
+    	public int ecall_set_pipe_fd([in]int parentfd[2], [in]int childfd[2]);
+	};
+
+    untrusted{
+        int ocall_fork([user_check]void *seal_buffer, int bufsiz, [out, size=msgsiz]void *seal_child_msg, int msgsiz);
+        int ocall_wait_for_parent_ack([out, size=msgsiz]void *seal_parent_msg, int msgsiz, int read_fd);
+        void ocall_fork_exit();
+    };
+};

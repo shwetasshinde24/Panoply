@@ -1,0 +1,11 @@
+enclave {
+
+	include "struct/sgx_sysselect_struct.h"
+    untrusted {
+        int ocall_select (int __nfds, [in, out] fd_set *__readfds,
+		   [in, out] fd_set *__writefds,
+		   [in, out] fd_set *__exceptfds,
+		   [in, size=tvsize] void *__timeout, int tvsize);
+    };
+
+};

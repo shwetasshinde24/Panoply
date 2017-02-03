@@ -1,0 +1,28 @@
+enclave {
+
+	include "sgx/sys/types.h"
+	include "struct/sgx_sysuio_struct.h"
+
+    untrusted {
+		ssize_t ocall_readv (int __fd, [in, size=iovec_size, count=__count]const void *__iovec, int iovec_size, int __count);
+		ssize_t ocall_writev (int __fd, int iovec_id, int iovec_size, int __count);  
+		int ocall_init_multiple_iovec_outside([in, size=iovec_size, count=__count] const void* __iovec, int iovec_size, int __count);
+		void ocall_copy_base_to_outside(int iovec_id, int i,[in, size=len] const void* base, int len);
+		void ocall_free_iovec_outside(int iovec_id, int iovec_size, int __count);
+		ssize_t ocall_process_vm_readv (pid_t __pid, 
+				 [user_check]const struct iovec *__lvec,
+				 unsigned long int __liovcnt,
+				 [user_check]const struct iovec *__rvec,
+				 unsigned long int __riovcnt,
+				 unsigned long int __flags);
+
+		/* Write to another process' address space.  */
+		ssize_t ocall_process_vm_writev (pid_t __pid, 
+				  [user_check]const struct iovec *__lvec,
+				  unsigned long int __liovcnt,
+				  [user_check]const struct iovec *__rvec,
+				  unsigned long int __riovcnt,
+				  unsigned long int __flags);
+    };
+
+};

@@ -1,0 +1,64 @@
+enclave {
+
+	include "sgx/sys/types.h"
+    // include "sgx/netinet/in.h"
+   	include "sgx/rpc/svc.h"
+   	include "sgx/rpc/xdr.h"
+
+    untrusted {
+        int ocall_pmap_set(unsigned long prognum, unsigned long versnum,
+                unsigned int protocol, unsigned short port);
+        int ocall_pmap_unset(unsigned long prognum, unsigned long versnum);
+		unsigned short ocall_pmap_getport([in, out]struct sockaddr_in *addr,
+                    unsigned long prognum, unsigned long versnum,
+                    unsigned int protocol);
+        SVCXPRT *ocall_svcudp_create (int __sock);
+        void ocall_svc_run (void);
+        SVCXPRT *ocall_svctcp_create(int __sock, u_int __sendsize, u_int __recvsize);
+        bool_t ocall_svc_register ([user_check]SVCXPRT *__xprt, rpcprog_t __prog,
+			    rpcvers_t __vers, __dispatch_fn_t __dispatch,
+			    rpcprot_t __protocol);
+
+        bool_t ocall_svc_register_generic([user_check]SVCXPRT *__xprt, rpcprog_t __prog,
+			    rpcvers_t __vers, __dispatch_fn_t __dispatch,
+			    rpcprot_t __protocol);
+
+		CLIENT *ocall_clnt_create([in, string] const char *__host, unsigned long __prog,
+			    unsigned long __vers, [in, string]const char *__prot);
+
+		void ocall_clnt_perror ([user_check]CLIENT *__clnt, [in, string]const char *__msg);
+		void ocall_clnt_pcreateerror ([in, string]const char *__msg);
+
+
+		int ocall_callrpc([in, string]const char *__host, unsigned long __prognum,
+		    unsigned long __versnum, unsigned long __procnum,
+		    xdrproc_t __inproc, [in, string]const char *__in,
+		    xdrproc_t __outproc, [in, out, string]char *__out);
+
+		bool_t ocall_svc_sendreply ([user_check] SVCXPRT *__xprt, xdrproc_t __xdr_results,
+			       [user_check]char* __xdr_location);
+			       
+		void ocall_svcerr_noproc([user_check] SVCXPRT *__xprt);
+		void ocall_svcerr_decode([user_check] SVCXPRT *__xprt);
+		void ocall_svcerr_systemerr ([user_check] SVCXPRT *__xprt);
+
+		// The resp buffer need to be outside the enclave (Sealed or encrypted)
+		bool ocall_clnt_call([user_check]CLIENT *rh, unsigned long proc, xdrproc_t xargs, caddr_t argsp, 
+			xdrproc_t xres, [user_check]char* resp, struct timeval timeout);
+
+		void ocall_fast_clnt_call(unsigned long proc);
+
+		bool_t ocall_clnt_control([user_check]CLIENT *cl, u_int rq, [in, out, size=in_size]char* in, int in_size);
+
+		// argsp need to be outside the enclave
+		bool_t ocall_svc_getargs([user_check]SVCXPRT *xprt, xdrproc_t xargs, [user_check]char* argsp);
+		bool_t ocall_svc_freeargs([user_check]SVCXPRT *xprt, xdrproc_t xargs, [user_check]char* argsp);
+    };
+
+    trusted {
+    	public void ecall_generic_rpc_dispatch_handler(unsigned long int handler_id, [user_check]struct svc_req *rqstp, 
+    	[user_check] SVCXPRT* transp);
+    	// public void ecall_rpc_xact_1([user_check]char *msg, [user_check] SVCXPRT *transp, [user_check]char *result, int res_size);
+    };
+
+};

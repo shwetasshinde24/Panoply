@@ -1,0 +1,35 @@
+// #include <replacements/sgx_stdio_util.h>
+#include <unistd.h>
+#include <stdarg.h>
+
+#include "MyEnclave_u.h"
+
+off_t ocall_read(int fd, void *buf, size_t count)
+{
+    return read(fd, buf, count);
+}
+
+off_t ocall_write(int fd, const void *buf, size_t count)
+{
+    return write(fd, buf, count);
+}
+
+off_t ocall_lseek(int fd, off_t offset, int whence)
+{
+	return lseek(fd, offset, whence);
+}
+
+int ocall_gethostname(char *name, size_t len)
+{
+    return gethostname(name, len);
+}
+
+int ocall_sethostname(const char *name, size_t len)
+{
+    return sethostname(name, len);
+}
+
+int ocall_close(int sock) 
+{
+    return close(sock);
+}

@@ -1,0 +1,32 @@
+enclave {
+
+	include "struct/sgx_signal_struct.h"
+
+	trusted {
+		public void ecall_generic_signal_handler(unsigned long int handler_id);
+	};
+
+    untrusted {
+		int ocall_sigemptyset([in, out] sigset_t *set);
+		int ocall_sigfillset([in, out] sigset_t *set);
+		int ocall_sigaddset([in, out] sigset_t *set, int signo);
+		int ocall_sigdelset([in, out] sigset_t *set, int signo);
+		int ocall_sigismember([in] const sigset_t *set, int signo);
+		
+		int ocall_sigsuspend([in] const sigset_t *set);
+		int ocall_sigaction(int sig, [in] const struct sigaction *act, [in, out] struct sigaction *oact);
+		
+		int ocall_sigpending([in, out] sigset_t *set);
+		int ocall_sigwait([in] const sigset_t *set,[in, out] int *sig);
+
+		// Use when the signal handler is actually inside the enclave
+		__sighandler_t ocall_signal_generic(int __sig, __sighandler_t __handler);
+		int ocall_sigaction_generic(int sig, [in] struct sigaction *act, [in, out] struct sigaction *oact);
+
+		// Otherwise, simply call the signal to register 
+		__sighandler_t ocall_signal(int __sig, __sighandler_t __handler);
+		int ocall_raise(int sig);
+		int ocall_kill(pid_t pid, int sig);
+    };
+
+};

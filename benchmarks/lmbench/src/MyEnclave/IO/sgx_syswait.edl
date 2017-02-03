@@ -1,0 +1,10 @@
+enclave {
+
+	include "struct/sgx_syswait_struct.h"
+    untrusted {
+        __pid_t ocall_waitpid (__pid_t __pid, [out]int *__stat_loc, int __options);
+        int ocall_waitid(idtype_t __idtype, __id_t __id, [in, out]siginfo_t *__infop, int __options);
+        pid_t ocall_wait([out]int *wstatus);
+    };
+
+};
