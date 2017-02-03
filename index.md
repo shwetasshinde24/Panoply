@@ -71,7 +71,7 @@ We are releasing the OpenSSL library and the corresponding benchmarks and unit t
 
 ### Getting the Demo Code
 
-You can download the demo code from the [project branch] (https://github.com/shwetasshinde24/Panoply/tree/demo-openssl) 
+You can download the demo code from the [project branch](https://github.com/shwetasshinde24/Panoply/tree/demo-openssl) 
 
 ### Executing the OpenSSL Demo Example
 
