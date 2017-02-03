@@ -12,3 +12,6 @@ cd patched-driver-sdk/customDriver
 <code>
 sudo ./install_driver.sh
 </code>
+
+
+For details refer the orginal [README](https://github.com/shwetasshinde24/Panoply/blob/master/patched-driver-sdk/customDriver/README_original.md) of the driver.
