@@ -20,3 +20,6 @@ cd patched-driver-sdk/customSDK
 <code>
 sudo ./reinstall_script.sh
 </code>
+
+
+For details refer the orginal [README](https://github.com/shwetasshinde24/Panoply/blob/master/patched-driver-sdk/customSDK/README_original.md) of the SGX SDK.
