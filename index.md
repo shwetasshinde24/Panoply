@@ -67,7 +67,7 @@ Before you start with Panoply, you should ensure that you are able to execute SG
 
 ## Panoply Demo
 
-We are releasing the OpenSSL library and the corresponding benchmarks and unit tests at the moment. You can setup the OpenSSL demo on your own machine using the following steps.
+You can setup the OpenSSL demo on your own machine using the following steps.
 
 ### Getting the Demo Code
 
@@ -158,6 +158,12 @@ make all
 <code>
 ./app -dhe1024dsa -bytes 102400 -num 10 -tls1 -server_auth -time
 </code>
+
+-----
+
+## Case-studies and Benchmarks
+
+The released case-studies and the benchmarks are available from the [Panoply code repository](https://github.com/shwetasshinde24/Panoply)
 
 -----
 
