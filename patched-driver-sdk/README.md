@@ -7,6 +7,9 @@ Please refer to the [Project Page](https://shwetasshinde24.github.io/Panoply) fo
 
 <code>
 cd patched-driver-sdk/customDriver
+</code>
+
+<code>
 sudo ./install_driver.sh
 </code>
 
@@ -14,7 +17,16 @@ sudo ./install_driver.sh
 
 <code>
 cd patched-driver-sdk/customSDK
+</code>
+
+<code>
 ./download_prebuilt.sh
+</code>
+
+<code>
 ./rebuild_script.sh
+</code>
+
+<code>
 ./reinstall_script.sh
 </code>
