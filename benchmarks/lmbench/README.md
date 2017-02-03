@@ -3,6 +3,10 @@ Low-TCB Linux Applications with SGX Enclaves
 
 # LMBench 
 
+## Prerequisite
+
+LMBench framework uses fork for executing its benchmark. Panoply supports fork by patching the default Intel SDK and the driver. So, if you want to run LMBench on your machine, Please setup the Panoply's version of SGX SDK And Linux driver from [here](https://github.com/shwetasshinde24/Panoply/tree/master/patched-driver-sdk), before executing LMBench. 
+
 ## Configuring Inividual Benchmarks
 
 The current code takes in a benchmark ID before compilation to produce the corresponding executable. 
