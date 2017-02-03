@@ -1,0 +1,9 @@
+enclave {
+
+    include "struct/sgx_poll_struct.h"
+
+    untrusted {
+        int ocall_poll([out, count =__nfds]struct pollfd *__fds, nfds_t __nfds, int __timeout);
+    };
+
+};

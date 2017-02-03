@@ -1,0 +1,12 @@
+enclave{
+    untrusted{
+		/* getopt.h wrapper function */
+		int wrapper_getopt(int argc, [user_check]char** argv, [in, string]const char *optstring);
+		void set_optind(int oi);
+		void set_opterr(int oe);
+		void set_optopt(int oo);
+		void set_optreset(int ors);
+		char * get_optarg();
+    };
+};
+

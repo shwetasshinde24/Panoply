@@ -1,0 +1,9 @@
+tor --quiet 
+PATH_TO_TOR_ENCLAVE_APP/app -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/000a/torrc
+PATH_TO_TOR_ENCLAVE_APP/app -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/001a/torrc
+PATH_TO_TOR_ENCLAVE_APP/app -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/002a/torrc
+PATH_TO_TOR_ENCLAVE_APP/app -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/003r/torrc
+PATH_TO_TOR_ENCLAVE_APP/app -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/004r/torrc
+PATH_TO_TOR_ENCLAVE_APP/app -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/005r/torrc
+tor -f /home/kekkaishi/Downloads/opensgx-master/Tor/chutney/net/nodes/006c/torrc
+

@@ -1,0 +1,23 @@
+enclave {
+
+    include "struct/sgx_dirent_struct.h"
+
+    untrusted {
+        
+        // Fix me: Scandir pass function pointer which is not supported
+
+        void *ocall_opendir ([in, string]const char *name);
+        void *ocall_fdopendir (int fd);
+        int ocall_closedir ([user_check]void *dirp);
+        struct dirent *ocall_readdir ([user_check] void *dirp);
+        int ocall_readdir_r ([user_check]void *dirp, [user_check]struct dirent *entry, [user_check]struct dirent **result);
+        void ocall_rewinddir ([user_check] void *dirp);
+        void ocall_seekdir ([user_check] void *dirp, long int pos);
+        long int ocall_telldir ([user_check] void *dirp);
+        int ocall_dirfd ([user_check] void *dirp);
+        int ocall_alphasort ([user_check] const struct dirent **e1, [user_check] const struct dirent **e2);
+        ssize_t ocall_getdirentries (int fd, [out, size=nbytes]char *buf, size_t nbytes, [user_check]off_t *basep);
+        int ocall_versionsort ([user_check]const struct dirent **e1, [user_check] const struct dirent **e2);
+    };
+
+};

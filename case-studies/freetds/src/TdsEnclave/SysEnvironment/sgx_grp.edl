@@ -1,0 +1,7 @@
+enclave{
+    include "struct/sgx_grp_struct.h"
+    untrusted{
+        struct group *ocall_getgrgid(gid_t gid);
+        int ocall_initgroups([in, string]const char *user, gid_t group);
+    };
+};

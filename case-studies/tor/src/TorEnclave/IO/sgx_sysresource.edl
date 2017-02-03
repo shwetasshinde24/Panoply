@@ -1,0 +1,11 @@
+enclave {
+
+	include "struct/sgx_sysresource_struct.h"
+    untrusted {
+		int ocall_prlimit (__pid_t pid, enum __rlimit_resource resource, [in]const struct rlimit *new_limit,
+				    [out] struct rlimit *old_limit);
+		int ocall_getrlimit(int resource, [out] struct rlimit *rlim);
+		int ocall_setrlimit(int resource, [in] const struct rlimit *rlim); 
+    };
+
+};

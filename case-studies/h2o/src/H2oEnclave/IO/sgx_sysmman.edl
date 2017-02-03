@@ -1,0 +1,21 @@
+enclave {
+
+	include "sgx/sys/types.h"
+	include "struct/sgx_sysmman_struct.h"
+
+    untrusted {
+    	void *ocall_mmap ([user_check]void *__addr, size_t __len, int __prot, int __flags, int __fd, __off_t __offset);
+   		void *ocall_mmap64 ([user_check]void *__addr, size_t __len, int __prot, int __flags, int __fd, __off64_t __offset);
+   		int ocall_munmap ([user_check]void *__addr, size_t __len);
+   		int ocall_mprotect ([user_check]void *__addr, size_t __len, int __prot);
+   		int ocall_msync ([user_check]void *__addr, size_t __len, int __flags);
+   		int ocall_mlock ([user_check]const void *__addr, size_t __len);
+   		int ocall_munlock ([user_check]const void *__addr, size_t __len);
+   		int ocall_mlockall (int __flags);
+   		int ocall_munlockall (void);
+   		int ocall_mincore ([user_check]void *__start, size_t __len, [user_check]unsigned char *__vec);
+   		int ocall_shm_open ([in, string]const char *__name, int __oflag, mode_t __mode);
+   		int ocall_shm_unlink ([in, string]const char *__name);
+    };
+
+};

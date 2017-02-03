@@ -1,0 +1,16 @@
+enclave {
+
+    include "struct/sgx_arpainet_struct.h"
+
+    untrusted {
+        in_addr_t ocall_inet_addr ([in, string]const char *cp) ;
+        in_addr_t ocall_inet_lnaof (struct in_addr in) ;
+        struct in_addr ocall_inet_makeaddr (in_addr_t net, in_addr_t host);
+        in_addr_t ocall_inet_netof (struct in_addr in);
+        in_addr_t ocall_inet_network ([in, string]const char *cp) ;
+        char *ocall_inet_ntoa (struct in_addr in) ;
+        int ocall_inet_pton (int af, [in, string]const char *cp, [user_check]void *buf) ;
+        char *ocall_inet_ntop (int af, [user_check] const void *cp, [in, out, size=len]char *buf, socklen_t len);
+    };
+
+};

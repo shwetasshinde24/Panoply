@@ -1,0 +1,3 @@
+ar -x libcrypto.a
+ar -x libssl.a
+ar -c libopenssl.a  *.o

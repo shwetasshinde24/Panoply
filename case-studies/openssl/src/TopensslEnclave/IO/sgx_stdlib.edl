@@ -1,0 +1,13 @@
+enclave {
+
+    untrusted {
+		char *ocall_getenv([in, string] const char *name);
+		int ocall_putenv([in, out, string] char *string);
+		int ocall_clearenv(void);
+		int ocall_setenv([in, string] const char *name,[in, string] const char *value, int replace);
+		int ocall_unsetenv ([in, string] const char *name);
+		int ocall_mkstemp([in, out, string]char *temp);
+        char *ocall_mkdtemp([in, out, string] char *temp);
+    };
+
+};

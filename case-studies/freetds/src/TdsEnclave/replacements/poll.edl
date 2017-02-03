@@ -1,0 +1,21 @@
+
+
+enclave {
+    
+    /*
+        define ocall wrap all stdio function for the enclave
+    */
+//    struct pollfd {
+//        int fd;
+//       short events;
+//        short revents;
+//    };
+
+    untrusted {
+    
+        // Exclude since the system has poll
+        // int tds_poll([in, out, size=nfds]struct pollfd* fds, int nfds, int timeout);
+    
+    };
+
+};

@@ -1,0 +1,12 @@
+enclave{
+    include "time.h"
+    untrusted{
+        time_t ocall_time( [out] time_t *t);
+        int ocall_gettimeofday([out, size=tv_size] void *tv, int tv_size, [in, size=tz_size] void *tz, int tz_size);
+        int ocall_gettimeofday2([out, size=tv_size] void *tv, int tv_size);
+        clock_t ocall_clock(void);
+        struct tm *ocall_gmtime_r([in]const time_t *timer, [out] struct tm *tp);
+        struct tm *ocall_localtime_r([in]const time_t *timer, [out] struct tm *tp);
+        time_t ocall_mktime([out]struct tm *tp);
+    };
+};

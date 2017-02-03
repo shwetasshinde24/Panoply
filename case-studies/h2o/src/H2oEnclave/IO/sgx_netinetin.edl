@@ -1,0 +1,14 @@
+
+
+enclave {
+
+	include "struct/sgx_netinetin_struct.h"
+
+    untrusted	{
+		uint32_t ocall_ntohl(uint32_t netlong);
+		uint16_t ocall_ntohs(uint16_t netshort);
+		uint32_t ocall_htonl(uint32_t hostlong);
+		uint16_t ocall_htons(uint16_t hostshort);
+    };
+
+};

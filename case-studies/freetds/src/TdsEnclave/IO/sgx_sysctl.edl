@@ -1,0 +1,9 @@
+enclave {
+
+	include "sgx/sys/types.h"
+
+    untrusted {
+		int ocall_sysctl([in, out, size=nlen]int *name, int nlen, [user_check]void *oldval, [user_check]size_t *oldlenp, [in, out, size=newlen] void *newval, size_t newlen);
+    };
+
+};

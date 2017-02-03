@@ -1,0 +1,4 @@
+# Rename all *.c to *.cpp
+for f in *.cpp; do 
+printf '#include "../TorEnclave.h" \n#include "TorEnclave_t.h"\n #include "../user_types.h"\n' | cat - "$f" > temp && mv temp "$f"
+done

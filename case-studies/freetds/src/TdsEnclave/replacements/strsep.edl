@@ -1,0 +1,9 @@
+
+
+enclave {
+    
+    trusted	{
+    	char *tds_strsep([usercheck]char **stringp, [in, string]const char *delim);
+    }
+
+};

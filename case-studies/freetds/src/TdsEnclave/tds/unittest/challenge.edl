@@ -1,0 +1,10 @@
+
+
+enclave {
+
+    trusted	{
+		public int ecall_unittest_challenge_main(void); 
+		
+    };
+
+};

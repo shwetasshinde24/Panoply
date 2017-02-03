@@ -1,0 +1,40 @@
+
+
+enclave {
+
+	include "sgx/sys/types.h"
+	include "struct/sgx_netdb_struct.h"
+
+    untrusted	{
+				
+		void ocall_freeaddrinfo([user_check] void *res);	
+		int ocall_getaddrinfo([in, string]const char *node, [in, string]const char *service, [in, size=48] const void *hints, [out] void **res);
+		int ocall_getaddrinfo1([in, string]const char *node, [in, string]const char *service, [user_check]const void *hints, [user_check]void *res);
+		void ocall_sethostent (int stay_open);
+		void ocall_endhostent (void);
+		struct hostent *ocall_gethostent (void);
+		struct hostent *ocall_gethostbyaddr ([in, size=len]const void *addr, socklen_t len, int type);
+		struct hostent *ocall_gethostbyname ([in, string]const char *name);
+		void ocall_setnetent (int stay_open);
+		void ocall_endnetent (void);
+		struct netent *ocall_getnetent (void);
+		struct netent *ocall_getnetbyaddr (uint32_t net, int type);
+		struct netent *ocall_getnetbyname ([in, string]const char *name);
+		void ocall_setservent (int stay_open);
+		void ocall_endservent (void);
+		struct servent *ocall_getservent (void);
+		struct servent *ocall_getservbyname ([in, string] const char *name, [in, string]const char *proto);
+		struct servent *ocall_getservbyport (int port, [in, string]const char *proto);
+		void ocall_setprotoent (int stay_open);
+		void ocall_endprotoent (void);
+		struct protoent *ocall_getprotoent (void);
+		struct protoent *ocall_getprotobyname ([in, string]const char *name);
+		struct protoent *ocall_getprotobynumber (int proto);
+		char *ocall_gai_strerror (int ecode);
+		int ocall_getnameinfo ([user_check] const struct sockaddr *sa,
+			socklen_t salen, [user_check] char *host,
+			socklen_t hostlen, [user_check] char *serv,
+			socklen_t servlen, int flags);
+    };
+
+};

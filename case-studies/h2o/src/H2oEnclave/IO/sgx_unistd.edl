@@ -1,0 +1,72 @@
+
+
+enclave {
+
+	// include "enclave_net_wrapper.h"
+	include "sgx/sys/types.h"
+
+    untrusted	{
+			
+		/* unistd.h ocall function */
+		int ocall_gethostname([out, size=len]char *name, size_t len);
+		int ocall_sethostname([in, size=len]const char *name, size_t len);
+		off_t ocall_lseek(int fd, off_t offset, int whence);   
+		off_t ocall_read(int fd, [out, size=count]void *buf, size_t count);
+		off_t ocall_write(int fd, [in, size=count]const void *buf, size_t count);
+		off_t ocall_read1(int fd, [out, size=count]void *buf, size_t count);
+		off_t ocall_write1(int fd, [in, size=count]const void *buf, size_t count);
+		off_t ocall_read2(int fd, [out, size=count]void *buf, size_t count);
+		off_t ocall_write2(int fd, [in, size=count]const void *buf, size_t count);
+		off_t ocall_read3(int fd, [out, size=count]void *buf, size_t count);
+		off_t ocall_write3(int fd, [in, size=count]const void *buf, size_t count);			
+		off_t ocall_read4(int fd, [out, size=count]void *buf, size_t count);
+		off_t ocall_write4(int fd, [in, size=count]const void *buf, size_t count);	
+		off_t ocall_read5(int fd, [out, size=count]void *buf, size_t count);
+		off_t ocall_write5(int fd, [in, size=count]const void *buf, size_t count);	
+		off_t ocall_read6(int fd, [out, size=count]void *buf, size_t count);
+		off_t ocall_write6(int fd, [in, size=count]const void *buf, size_t count);	
+		off_t ocall_read7(int fd, [out, size=count]void *buf, size_t count);
+		off_t ocall_write7(int fd, [in, size=count]const void *buf, size_t count);	
+										
+		int ocall_close(int fd);
+		pid_t ocall_getpid(void);
+		pid_t ocall_getppid(void);
+		// pid_t ocall_fork(void);
+		ssize_t ocall_pread(int fd, [out, size=nbytes]void *buf, size_t nbytes, off_t offset);
+		ssize_t ocall_pwrite(int fd, [in, size=n]const void *buf, size_t n, off_t offset);	
+		int ocall_pipe([user_check]int pipedes[2]);
+		int ocall_pipe2([user_check]int pipedes[2], int flag);
+		unsigned int ocall_sleep(unsigned int seconds);
+		unsigned int ocall_usleep(unsigned int seconds);
+		int ocall_chown([in, string]const char *file, uid_t owner, gid_t group);
+		int ocall_fchown(int fd, uid_t owner, gid_t group);
+		int ocall_lchown([in, string]const char *file, uid_t owner, gid_t group);
+		int ocall_chdir([in, string]const char *path);
+		int ocall_fchdir(int fd);
+		char *ocall_get_current_dir_name(void);
+		int ocall_dup(int fd);
+		int ocall_dup2(int fd, int fd2);
+		int ocall_dup3(int fd, int fd2, int flags);
+		/* Get the real user ID of the calling process.  */
+		uid_t ocall_getuid(void);
+		/* Get the effective user ID of the calling process.  */
+		uid_t ocall_geteuid(void);
+		/* Get the real group ID of the calling process.  */
+		gid_t ocall_getgid(void);
+		/* Get the effective group ID of the calling process.  */
+		gid_t ocall_getegid(void);
+		int ocall_getpagesize(void);
+		char *ocall_getcwd([out, size=size]char *buf, size_t size);
+		int ocall_unlink([in, string] const char *name);
+		int ocall_rmdir([in, string] const char *name);
+		void ocall__exit(int stat);
+		long ocall_sysconf(int name);
+		int ocall_setgid(gid_t gid);
+		int ocall_setuid(uid_t uid);
+		int ocall_execvp([in, string]const char *file, [user_check] const char **argv);
+		int ocall_ftruncate(int fd, off_t len);
+		void ocall_free([user_check] void* p);
+		int ocall_geterrno();
+    };
+
+};

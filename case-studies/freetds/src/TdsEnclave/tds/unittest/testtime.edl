@@ -1,0 +1,10 @@
+
+
+enclave {
+
+    trusted	{
+		public int ecall_unittest_testtime_main(int argc, [user_check]char **argv); 
+		
+    };
+
+};

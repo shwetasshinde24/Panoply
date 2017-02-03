@@ -1,0 +1,13 @@
+# to find out the configuration commands, run: h2o --help
+
+# accept HTTPS on port 443
+listen:
+  host: 127.0.0.1
+  port: 8888
+hosts:
+  "127.0.0.1:8888":
+    paths:
+      /:
+        file.dir: examples/doc_root
+    access-log: /dev/stdout
+

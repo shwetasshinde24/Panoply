@@ -1,0 +1,5 @@
+APP_ABI := x86
+APP_STL := gnustl_shared
+APP_PLATFORM := 18
+APP_OPTIM := debug
+NDK_TOOLCHAIN_VERSION := 4.8

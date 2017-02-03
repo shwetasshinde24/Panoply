@@ -1,0 +1,10 @@
+
+
+enclave {
+
+    trusted	{
+		public int ecall_unittest_flags_main(int argc, [user_check]char **argv); 
+		
+    };
+
+};

@@ -1,0 +1,12 @@
+enclave {
+
+    include "struct/sgx_netif_struct.h"
+
+    untrusted {
+		unsigned int ocall_if_nametoindex([in, string] const char *ifname);
+		char *ocall_if_indextoname(unsigned int ifindex, [in, string] char *ifname);
+		struct if_nameindex *ocall_if_nameindex(void);
+		void ocall_if_freenameindex([user_check]struct if_nameindex *ptr);
+    };
+
+};
