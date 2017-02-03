@@ -5,4 +5,4 @@ Please refer to the [Project Page](https://shwetasshinde24.github.io/Panoply) fo
 
 # Panoply Benchmarks
 
-- LMBench
+- [LMBench] (https://github.com/shwetasshinde24/Panoply/tree/master/benchmarks/lmbench)
