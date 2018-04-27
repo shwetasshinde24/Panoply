@@ -10,7 +10,7 @@ Please refer to the [Project Page](https://shwetasshinde24.github.io/Panoply) fo
 ### Go to the src directory of the case study 
 
 <code>
-$ cd case-studies/freetds/src/
+$ cd case-studies/tor/src/
 </code>
 
 ### Ensure that you have all the necessary library files:
@@ -19,14 +19,14 @@ $ cd case-studies/freetds/src/
 $ ls *.a
 </code>
 
-case-studies/freetds/src/libcrypto.a
-case-studies/freetds/src/libevent.a
-case-studies/freetds/src/libevent_core.a
-case-studies/freetds/src/libevent_extra.a
-case-studies/freetds/src/libevent_openssl.a
-case-studies/freetds/src/libevent_pthreads.a
-case-studies/freetds/src/libssl.a
-case-studies/freetds/src/libz.a
+case-studies/tor/src/libcrypto.a
+case-studies/tor/src/libevent.a
+case-studies/tor/src/libevent_core.a
+case-studies/tor/src/libevent_extra.a
+case-studies/tor/src/libevent_openssl.a
+case-studies/tor/src/libevent_pthreads.a
+case-studies/tor/src/libssl.a
+case-studies/tor/src/libz.a
 
 ### Compile the case study
 
@@ -100,7 +100,7 @@ Line 28: RunAsDaemon 0
 Run each of the following commands in a new terminal
 
 <code>
-$ cd case-studies/freetds/src/
+$ cd case-studies/tor/src/
 </code>
 
 <code>
