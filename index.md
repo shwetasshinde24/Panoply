@@ -231,7 +231,7 @@ Network and Distributed System Security Symposium (NDSS 2017)
 
 ### Support
 
-Having trouble with Panoply? Check out our [FAQ](https://shwetasshinde24.github.io/Panoply/faq.html) or tell us about it [directly](https://www.comp.nus.edu.sg/~shweta24/) and we’ll help you sort it out.
+Having trouble with Panoply? Check out our [FAQ](https://shwetasshinde24.github.io/Panoply/#faqs) or tell us about it [directly](https://www.comp.nus.edu.sg/~shweta24/) and we’ll help you sort it out.
 
 ### Announcements
 
