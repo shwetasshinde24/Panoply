@@ -239,7 +239,7 @@ Want to get future updates for Panoply? Join our [Google Group](panoply-announce
 
 ### Acknowledging Panoply
 
-* Using Panoply in your research projects and want to acknowledge it? Just [cite](https://www.comp.nus.edu.sg/~shweta24/panoply_ndss17.bib) our [NDSS'17 paper](https://www.comp.nus.edu.sg/~shweta24/publications/panoply_ndss17.pdf).
+* Using Panoply in your research projects and want to acknowledge it? Just [cite](https://dblp.uni-trier.de/rec/bibtex/conf/ndss/ShindeTTS17) our [NDSS'17 paper](https://www.comp.nus.edu.sg/~shweta24/publications/panoply_ndss17.pdf).
 
 * Panoply is released under [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
