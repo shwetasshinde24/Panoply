@@ -218,7 +218,7 @@ Network and Distributed System Security Symposium (NDSS 2017)
 
 ### Panoply Team 
 
-#### [Shweta Shinde](https://www.comp.nus.edu.sg/~shweta24/): Project Maintainer
+#### [Shweta Shinde](https://people.eecs.berkeley.edu/~shwetas/)
 
 #### [Dat Le Tien](https://coinsrs.no/dat-le-tien/)
 
